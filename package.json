@@ -1,0 +1,14 @@
+{
+  "name": "eslint-config-qb",
+  "version": "1.0.0",
+  "description": "Custom configuration for eslint",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslintconfig"
+  ],
+  "author": "autioch",
+  "license": "ISC"
+}
