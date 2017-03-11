@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Custom configuration for eslint",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint ./src --quiet --ext .js & exit 0"
+  },
   "keywords": [
     "eslint",
     "eslint-config",
