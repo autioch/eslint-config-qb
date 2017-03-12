@@ -22,7 +22,7 @@ module.exports = {
     }],
 
     // Enforce or disallow capitalization of the first letter of a comment
-    'capitalized-comments': ['error', 'always', {
+    'capitalized-comments': ['off', 'always', {
       ignoreConsecutiveComments: false,
       ignoreInlineComments: false
     }],
@@ -337,7 +337,7 @@ module.exports = {
     'one-var-declaration-per-line': ['error', 'always'],
 
     // Require or disallow assignment operator shorthand where possible
-    'operator-assignment': ['error', 'never'],
+    'operator-assignment': ['off', 'never'],
 
     // Enforce consistent linebreak style for operators
     'operator-linebreak': ['error', 'after'],

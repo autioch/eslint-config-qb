@@ -39,7 +39,7 @@ module.exports = {
 
     // Enforce dot notation whenever possible
     'dot-notation': ['error', {
-      allowKeywords: false
+      allowKeywords: true
     }],
 
     // Require the use of === and !==
