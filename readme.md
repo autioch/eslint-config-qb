@@ -1,8 +1,14 @@
 # eslint-config-qb
 
-My custom configuration for eslint.
+Custom configuration for eslint.
+
+## Target
+- ES6,
+- Nodejs,
+- browser.
 
 ## Objectives
-- focused on ES6 and node,
-- applies to browser javascript as well,
-- as strict as possible.
+- as strict as possible,
+- simple and easy to understand code,
+- no tricks,
+- no hacks.

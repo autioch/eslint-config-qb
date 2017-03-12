@@ -7,12 +7,14 @@ module.exports = {
     }],
 
     // Require parentheses around arrow function arguments
-    'arrow-parens': ['error', 'always'],
+    'arrow-parens': ['error', 'as-needed', {
+      requireForBlockBody: true
+    }],
 
     // Enforce consistent spacing before and after the arrow in arrow functions
     'arrow-spacing': ['error', {
-      'after': true,
-      'before': true
+      after: true,
+      before: true
     }],
 
     // Require super() calls in constructors
@@ -20,15 +22,17 @@ module.exports = {
 
     // Enforce consistent spacing around * operators in generator functions
     'generator-star-spacing': ['error', {
-      'after': false,
-      'before': true
+      after: true,
+      before: true
     }],
 
     // Disallow reassigning class members
     'no-class-assign': ['error'],
 
     // Disallow arrow functions where they could be confused with comparisons
-    'no-confusing-arrow': ['error'],
+    'no-confusing-arrow': ['error', {
+      'allowParens': false
+    }],
 
     // Disallow reassigning const variables
     'no-const-assign': ['error'],
@@ -37,13 +41,17 @@ module.exports = {
     'no-dupe-class-members': ['error'],
 
     // Disallow duplicate module imports
-    'no-duplicate-imports': ['error'],
+    'no-duplicate-imports': ['error', {
+      'includeExports': false
+    }],
 
     // Disallow new operators with the Symbol object
     'no-new-symbol': ['error'],
 
     // Disallow specified modules when loaded by import
-    'no-restricted-imports': ['error'],
+    'no-restricted-imports': ['error', {
+      paths: ['underscore', 'ramda']
+    }],
 
     // Disallow this/super before calling super() in constructors
     'no-this-before-super': ['error'],
@@ -55,13 +63,21 @@ module.exports = {
     'no-useless-constructor': ['error'],
 
     // Disallow renaming import, export, and destructured assignments to the same name
-    'no-useless-rename': ['error'],
+    'no-useless-rename': ['error', {
+      ignoreDestructuring: false,
+      ignoreExport: false,
+      ignoreImport: false
+    }],
 
     // Require let or const instead of var
     'no-var': ['error'],
 
     // Require or disallow method and property shorthand syntax for object literals
-    'object-shorthand': ['error', 'always'],
+    'object-shorthand': ['error', 'always', {
+      avoidExplicitReturnArrows: true,
+      avoidQuotes: false,
+      ignoreConstructors: false
+    }],
 
     // Require arrow functions as callbacks
     'prefer-arrow-callback': ['error', {
@@ -69,10 +85,18 @@ module.exports = {
     }],
 
     // Require const declarations for variables that are never reassigned after declared
-    'prefer-const': ['error'],
+    'prefer-const': ['error', {
+      destructuring: 'any',
+      ignoreReadBeforeAssign: false
+    }],
 
     // Require destructuring from arrays and/or objects
-    'prefer-destructuring': ['error'],
+    'prefer-destructuring': ['error', {
+      'array': true,
+      'object': true
+    }, {
+      'enforceForRenamedProperties': false
+    }],
 
     // Disallow parseInt() in favor of binary, octal, and hexadecimal literals
     'prefer-numeric-literals': ['off'],
@@ -90,19 +114,23 @@ module.exports = {
     'require-yield': ['error'],
 
     // Enforce spacing between rest and spread operators and their expressions
-    'rest-spread-spacing': ['error'],
+    'rest-spread-spacing': ['error', 'never'],
 
     // Enforce sorted import declarations within modules
-    'sort-imports': ['error'],
+    /* Not using imports at all */
+    'sort-imports': ['off'],
 
     // Require symbol descriptions
     'symbol-description': ['error'],
 
     // Require or disallow spacing around embedded expressions of template strings
-    'template-curly-spacing': ['error'],
+    'template-curly-spacing': ['error', 'never'],
 
     // Require or disallow spacing around the * in yield* expressions
-    'yield-star-spacing': ['error']
+    'yield-star-spacing': ['error', {
+      after: true,
+      before: true
+    }]
 
   }
 };

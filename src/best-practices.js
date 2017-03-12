@@ -2,7 +2,10 @@ module.exports = {
   rules: {
 
     // Enforce getter and setter pairs in objects
-    'accessor-pairs': ['error'],
+    'accessor-pairs': ['error', {
+      getWithoutSet: true,
+      setWithoutGet: true
+    }],
 
     // Enforce return statements in callbacks of array methods
     'array-callback-return': ['error'],
@@ -11,25 +14,33 @@ module.exports = {
     'block-scoped-var': ['error'],
 
     // Enforce that class methods utilize this
-    'class-methods-use-this': ['error'],
+    'class-methods-use-this': ['error', {
+      exceptMethods: []
+    }],
 
     // Enforce a maximum cyclomatic complexity allowed in a program
-    'complexity': ['error', 20], // eslint-disable-line no-magic-numbers
+    'complexity': ['error', {
+      max: 20
+    }],
 
     // Require return statements to either always or never specify values
-    'consistent-return': ['error'],
+    'consistent-return': ['error', {
+      treatUndefinedAsUnspecified: true
+    }],
 
     // Enforce consistent brace style for all control statements
-    'curly': ['error'],
+    'curly': ['error', 'all'],
 
     // Require default cases in switch statements
     'default-case': ['error'],
 
     // Enforce consistent newlines before and after dots
-    'dot-location': ['error'],
+    'dot-location': ['error', 'property'],
 
     // Enforce dot notation whenever possible
-    'dot-notation': ['error'],
+    'dot-notation': ['error', {
+      allowKeywords: false
+    }],
 
     // Require the use of === and !==
     'eqeqeq': ['warn'],
@@ -65,7 +76,9 @@ module.exports = {
     'no-eval': ['error'],
 
     // Disallow extending native types
-    'no-extend-native': ['error'],
+    'no-extend-native': ['error', {
+      exceptions: []
+    }],
 
     // Disallow unnecessary calls to .bind()
     'no-extra-bind': ['error'],
@@ -80,11 +93,16 @@ module.exports = {
     'no-floating-decimal': ['error'],
 
     // Disallow assignments to native objects or read-only global variables
-    'no-global-assign': ['error'],
+    'no-global-assign': ['error', {
+      'exceptions': []
+    }],
 
     // Disallow shorthand type conversions
     'no-implicit-coercion': ['error', {
-      allow: ['!!']
+      allow: ['!!'],
+      'boolean': true,
+      number: true,
+      string: true
     }],
 
     // Disallow variable and function declarations in the global scope
@@ -100,7 +118,10 @@ module.exports = {
     'no-iterator': ['error'],
 
     // Disallow labeled statements
-    'no-labels': ['error'],
+    'no-labels': ['error', {
+      allowLoop: false,
+      allowSwitch: false
+    }],
 
     // Disallow unnecessary nested blocks
     'no-lone-blocks': ['error'],
@@ -110,13 +131,16 @@ module.exports = {
 
     // Disallow magic numbers
     'no-magic-numbers': ['error', {
-      detectObjects: false,
+      detectObjects: true,
+      enforceConst: true,
       ignore: [-1, 0, 1, 10],
       ignoreArrayIndexes: false
     }],
 
     // Disallow multiple spaces
-    'no-multi-spaces': ['error'],
+    'no-multi-spaces': ['error', {
+      exceptions: {}
+    }],
 
     // Disallow multiline strings
     'no-multi-str': ['error'],
@@ -137,19 +161,24 @@ module.exports = {
     'no-octal-escape': ['error'],
 
     // Disallow reassigning function parameters
-    'no-param-reassign': ['error'],
+    'no-param-reassign': ['error', {
+      ignorePropertyModificationsFor: [],
+      props: true
+    }],
 
     // Disallow the use of the __proto__ property
     'no-proto': ['error'],
 
     // Disallow variable redeclaration
-    'no-redeclare': ['error'],
+    'no-redeclare': ['error', {
+      'builtinGlobals': true
+    }],
 
     // Disallow certain properties on certain objects
-    'no-restricted-properties': ['error'],
+    'no-restricted-properties': ['off'],
 
     // Disallow assignment operators in return statements
-    'no-return-assign': ['error'],
+    'no-return-assign': ['error', 'always'],
 
     // Disallow unnecessary return await
     'no-return-await': ['error'],
@@ -158,7 +187,9 @@ module.exports = {
     'no-script-url': ['error'],
 
     // Disallow assignments where both sides are exactly the same
-    'no-self-assign': ['error'],
+    'no-self-assign': ['error', {
+      props: true
+    }],
 
     // Disallow comparisons where both sides are exactly the same
     'no-self-compare': ['error'],
@@ -174,8 +205,8 @@ module.exports = {
 
     // Disallow unused expressions
     'no-unused-expressions': ['error', {
-      allowShortCircuit: true,
-      allowTernary: true
+      allowShortCircuit: false,
+      allowTernary: false
     }],
 
     // Disallow unused labels
@@ -197,16 +228,21 @@ module.exports = {
     'no-void': ['error'],
 
     // Disallow specified warning terms in comments
-    'no-warning-comments': ['error'],
+    'no-warning-comments': ['error', {
+      'location': 'start',
+      'terms': ['fixme', 'xxx']
+    }],
 
     // Disallow with statements
     'no-with': ['error'],
 
     // Require using Error objects as Promise rejection reasons
-    'prefer-promise-reject-errors': ['error'],
+    'prefer-promise-reject-errors': ['error', {
+      allowEmptyReject: false
+    }],
 
     // Enforce the consistent use of the radix argument when using parseInt()
-    'radix': ['error'],
+    'radix': ['error', 'always'],
 
     // Disallow async functions which have no await expression
     'require-await': ['error'],
@@ -215,7 +251,9 @@ module.exports = {
     'vars-on-top': ['error'],
 
     // Require parentheses around immediate function invocations
-    'wrap-iife': ['error'],
+    'wrap-iife': ['error', 'inside', {
+      functionPrototypeMethods: false
+    }],
 
     // Require or disallow “Yoda” conditions
     'yoda': ['error']

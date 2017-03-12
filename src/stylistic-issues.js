@@ -2,49 +2,65 @@ module.exports = {
   rules: {
 
     // Enforce consistent spacing inside array brackets
-    'array-bracket-spacing': ['error'],
+    'array-bracket-spacing': ['error', 'never', {
+      arraysInArrays: true,
+      objectsInArrays: false,
+      singleValue: false
+    }],
 
     // Enforce consistent spacing inside single-line blocks
     'block-spacing': ['error'],
 
     // Enforce consistent brace style for blocks
-    'brace-style': ['error'],
+    'brace-style': ['error', '1tbs', {
+      'allowSingleLine': false
+    }],
 
     // Enforce camelcase naming convention
-    'camelcase': ['error'],
+    'camelcase': ['error', {
+      properties: 'always'
+    }],
 
     // Enforce or disallow capitalization of the first letter of a comment
-    'capitalized-comments': ['error'],
+    'capitalized-comments': ['error', 'always', {
+      ignoreConsecutiveComments: false,
+      ignoreInlineComments: false
+    }],
 
     // Require or disallow trailing commas
     'comma-dangle': ['error'],
 
     // Enforce consistent spacing before and after commas
-    'comma-spacing': ['error'],
+    'comma-spacing': ['error', {
+      after: true,
+      before: false
+    }],
 
     // Enforce consistent comma style
     'comma-style': ['error'],
 
     // Enforce consistent spacing inside computed property brackets
-    'computed-property-spacing': ['error'],
+    'computed-property-spacing': ['error', 'never'],
 
     // Enforce consistent naming when capturing the current execution context
     'consistent-this': ['error'],
 
     // Require or disallow newline at the end of files
-    'eol-last': ['error'],
+    'eol-last': ['error', 'always'],
 
     // Require or disallow spacing between function identifiers and their invocations
-    'func-call-spacing': ['error'],
+    'func-call-spacing': ['error', 'never'],
 
     // Require function names to match the name of the variable or property to which they are assigned
     'func-name-matching': ['error'],
 
     // Require or disallow named function expressions
-    'func-names': ['error'],
+    'func-names': ['error', 'always'],
 
     // Enforce the consistent use of either function declarations or expressions
-    'func-style': ['error'],
+    'func-style': ['error', 'declaration', {
+      allowArrowFunctions: true
+    }],
 
     // Disallow specified identifiers
     'id-blacklist': ['error', 'item', 'data'],
@@ -54,17 +70,17 @@ module.exports = {
       exceptions: [],
       max: 30,
       min: 3,
-      properties: 'never'
+      properties: 'always'
     }],
 
     // Require identifiers to match a specified regular expression
-    'id-match': ['error'],
+    'id-match': ['off'],
 
     // Enforce consistent indentation
-    'indent': ['error', 2], // eslint-disable-line no-magic-numbers
+    'indent': ['error', 2],
 
     // Enforce the consistent use of either double or single quotes in JSX attributes
-    'jsx-quotes': ['error'],
+    'jsx-quotes': ['error', 'prefer-double'],
 
     // Enforce consistent spacing between keys and values in object literal properties
     'key-spacing': ['error'],
@@ -73,7 +89,9 @@ module.exports = {
     'keyword-spacing': ['error'],
 
     // Enforce position of line comments
-    'line-comment-position': ['error'],
+    'line-comment-position': ['error', {
+      position: 'above'
+    }],
 
     // Enforce consistent linebreak style
     'linebreak-style': ['error', 'windows'],
@@ -85,7 +103,9 @@ module.exports = {
     'lines-around-directive': ['error'],
 
     // Enforce a maximum depth that blocks can be nested
-    'max-depth': ['error'],
+    'max-depth': ['error', {
+      max: 4
+    }],
 
     // Enforce a maximum line length
     'max-len': ['error', {
@@ -100,18 +120,26 @@ module.exports = {
     }],
 
     // Enforce a maximum depth that callbacks can be nested
-    'max-nested-callbacks': ['error'],
+    'max-nested-callbacks': ['error', {
+      max: 2
+    }],
 
     // Enforce a maximum number of parameters in function definitions
-    'max-params': ['error', 4], // eslint-disable-line no-magic-numbers
+    'max-params': ['error', {
+      max: 4
+    }],
 
     // Enforce a maximum number of statements allowed in function blocks
-    'max-statements': ['error'],
+    'max-statements': ['error', {
+      max: 10
+    }, {
+      ignoreTopLevelFunctions: false
+    }],
 
     // Enforce a maximum number of statements allowed per line
     'max-statements-per-line': ['error', {
-      max: 20
-    }], // eslint-disable-line no-magic-numbers
+      max: 1
+    }],
 
     // Enforce newlines between operands of ternary expressions
     'multiline-ternary': ['error', 'never'],
@@ -170,7 +198,9 @@ module.exports = {
     'no-new-object': ['error'],
 
     // Disallow the unary operators ++ and --
-    'no-plusplus': ['error'],
+    'no-plusplus': ['error', {
+      allowForLoopAfterthoughts: true
+    }],
 
     // Disallow specified syntax
     'no-restricted-syntax': ['error'],
@@ -179,10 +209,12 @@ module.exports = {
     'no-tabs': ['error'],
 
     // Disallow ternary operators
-    'no-ternary': ['error'],
+    'no-ternary': ['off'],
 
     // Disallow trailing whitespace at the end of lines
-    'no-trailing-spaces': ['error'],
+    'no-trailing-spaces': ['error', {
+      skipBlankLines: false
+    }],
 
     // Disallow dangling underscores in identifiers
     'no-underscore-dangle': ['error'],
@@ -240,13 +272,18 @@ module.exports = {
     }],
 
     // Enforce the consistent use of either backticks, double, or single quotes
-    'quotes': ['error', 'single'],
+    'quotes': ['error', 'single', {
+      allowTemplateLiterals: true,
+      avoidEscape: true
+    }],
 
     // Require JSDoc comments
     'require-jsdoc': ['off'],
 
     // Require or disallow semicolons instead of ASI
-    'semi': ['error'],
+    'semi': ['error', 'always', {
+      omitLastInOneLineBlock: false
+    }],
 
     // Enforce consistent spacing before and after semicolons
     'semi-spacing': ['error'],
@@ -256,7 +293,7 @@ module.exports = {
 
     // Require variables within the same declaration block to be sorted
     'sort-vars': ['error', {
-      ignoreCase: false
+      ignoreCase: true
     }],
 
     // Enforce consistent spacing before blocks
@@ -281,13 +318,13 @@ module.exports = {
     'spaced-comment': ['error', 'always'],
 
     // Require or disallow spacing between template tags and their literals
-    'template-tag-spacing': ['error'],
+    'template-tag-spacing': ['error', 'never'],
 
     // Require or disallow Unicode byte order mark (BOM)
-    'unicode-bom': ['error'],
+    'unicode-bom': ['error', 'never'],
 
     // Require parenthesis around regex literals
-    'wrap-regex': ['error']
+    'wrap-regex': ['off']
 
   }
 };

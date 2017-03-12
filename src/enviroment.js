@@ -2,19 +2,19 @@ module.exports = {
   env: {
 
     // Browser global variables
-    browser: false,
+    browser: true,
 
     // CommonJS global variables and CommonJS scoping (use this for browser-only code that uses Browserify/WebPack).
-    commonjs: false,
+    commonjs: true,
 
     // Enable all ECMAScript 6 features except for modules (this automatically sets the ecmaVersion parser option to 6).
-    es6: false,
+    es6: true,
 
     // Node.js global variables and Node.js scoping
-    node: false,
+    node: true,
 
     // Globals common to both Node and Browser.
-    'shared-node-browser': false
+    'shared-node-browser': true
   },
   parserOptions: {
     ecmaFeatures: {

@@ -11,5 +11,8 @@ module.exports = {
   ].map(require.resolve),
   env: {
     node: true
+  },
+  rules: {
+    'no-magic-numbers': ['off']
   }
 };
