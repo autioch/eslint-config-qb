@@ -2,18 +2,18 @@ module.exports = {
   rules: {
 
     // Require return statements after callbacks
-    'callback-return': ['warn', ['callback']],
+    'callback-return': ['warn', ['callback'] ],
 
     // Require require() calls to be placed at top-level module scope
-    'global-require': ['error'],
+    'global-require': ['off'],
 
     // Require error handling in callbacks
     'handle-callback-err': ['error', 'err'],
 
     // Disallow require calls to be mixed with regular variable declarations
     'no-mixed-requires': ['error', {
-      'allowCall': false,
-      'grouping': true
+      allowCall: false,
+      grouping: true
     }],
 
     // Disallow new operators with calls to require

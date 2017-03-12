@@ -4,7 +4,7 @@
   "description": "Custom configuration for eslint",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./src --quiet --ext .js & exit 0"
+    "lint": "eslint ./src --fix --ext .js & exit 0"
   },
   "keywords": [
     "eslint",

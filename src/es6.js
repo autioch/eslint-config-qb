@@ -7,7 +7,7 @@ module.exports = {
     }],
 
     // Require parentheses around arrow function arguments
-    'arrow-parens': ['error', 'as-needed', {
+    'arrow-parens': ['error', 'always', {
       requireForBlockBody: true
     }],
 
@@ -31,7 +31,7 @@ module.exports = {
 
     // Disallow arrow functions where they could be confused with comparisons
     'no-confusing-arrow': ['error', {
-      'allowParens': false
+      allowParens: false
     }],
 
     // Disallow reassigning const variables
@@ -42,7 +42,7 @@ module.exports = {
 
     // Disallow duplicate module imports
     'no-duplicate-imports': ['error', {
-      'includeExports': false
+      includeExports: false
     }],
 
     // Disallow new operators with the Symbol object
@@ -92,10 +92,10 @@ module.exports = {
 
     // Require destructuring from arrays and/or objects
     'prefer-destructuring': ['error', {
-      'array': true,
-      'object': true
+      array: true,
+      object: true
     }, {
-      'enforceForRenamedProperties': false
+      enforceForRenamedProperties: false
     }],
 
     // Disallow parseInt() in favor of binary, octal, and hexadecimal literals

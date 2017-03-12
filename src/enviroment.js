@@ -32,6 +32,6 @@ module.exports = {
       jsx: false
     },
     ecmaVersion: 6,
-    sourceType: 'script'
+    sourceType: 'module'
   }
 };

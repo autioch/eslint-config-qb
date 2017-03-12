@@ -3,7 +3,7 @@ module.exports = {
 
     // Enforce getter and setter pairs in objects
     'accessor-pairs': ['error', {
-      getWithoutSet: true,
+      getWithoutSet: false,
       setWithoutGet: true
     }],
 
@@ -19,7 +19,7 @@ module.exports = {
     }],
 
     // Enforce a maximum cyclomatic complexity allowed in a program
-    'complexity': ['error', {
+    complexity: ['error', {
       max: 20
     }],
 
@@ -29,7 +29,7 @@ module.exports = {
     }],
 
     // Enforce consistent brace style for all control statements
-    'curly': ['error', 'all'],
+    curly: ['error', 'all'],
 
     // Require default cases in switch statements
     'default-case': ['error'],
@@ -43,7 +43,7 @@ module.exports = {
     }],
 
     // Require the use of === and !==
-    'eqeqeq': ['warn'],
+    eqeqeq: ['warn'],
 
     // Require for-in loops to include an if statement
     'guard-for-in': ['warn'],
@@ -94,7 +94,7 @@ module.exports = {
 
     // Disallow assignments to native objects or read-only global variables
     'no-global-assign': ['error', {
-      'exceptions': []
+      exceptions: []
     }],
 
     // Disallow shorthand type conversions
@@ -162,8 +162,7 @@ module.exports = {
 
     // Disallow reassigning function parameters
     'no-param-reassign': ['error', {
-      ignorePropertyModificationsFor: [],
-      props: true
+      props: false
     }],
 
     // Disallow the use of the __proto__ property
@@ -171,7 +170,7 @@ module.exports = {
 
     // Disallow variable redeclaration
     'no-redeclare': ['error', {
-      'builtinGlobals': true
+      builtinGlobals: true
     }],
 
     // Disallow certain properties on certain objects
@@ -229,8 +228,8 @@ module.exports = {
 
     // Disallow specified warning terms in comments
     'no-warning-comments': ['error', {
-      'location': 'start',
-      'terms': ['fixme', 'xxx']
+      location: 'start',
+      terms: ['fixme', 'xxx']
     }],
 
     // Disallow with statements
@@ -242,7 +241,7 @@ module.exports = {
     }],
 
     // Enforce the consistent use of the radix argument when using parseInt()
-    'radix': ['error', 'always'],
+    radix: ['error', 'always'],
 
     // Disallow async functions which have no await expression
     'require-await': ['error'],
@@ -256,7 +255,7 @@ module.exports = {
     }],
 
     // Require or disallow “Yoda” conditions
-    'yoda': ['error']
+    yoda: ['error']
 
   }
 };

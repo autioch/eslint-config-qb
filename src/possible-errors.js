@@ -83,7 +83,7 @@ module.exports = {
     'no-obj-calls': ['error'],
 
     // Disallow calling some Object.prototype methods directly on objects
-    'no-prototype-builtins': ['error'],
+    'no-prototype-builtins': ['off'],
 
     // Disallow multiple spaces in regular expressions
     'no-regex-spaces': ['error'],
@@ -116,7 +116,6 @@ module.exports = {
         arg: 'param',
         argument: 'param',
         'class': 'constructor',
-        'return': 'returns',
         virtual: 'abstract'
       },
       preferType: {},
@@ -128,7 +127,7 @@ module.exports = {
 
     // Enforce comparing typeof expressions against valid strings
     'valid-typeof': ['error', {
-      'requireStringLiterals': false
+      requireStringLiterals: false
     }]
 
   }
