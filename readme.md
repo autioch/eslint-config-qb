@@ -18,7 +18,8 @@ Custom configuration for eslint.
 - no hacks.
 
 ## Development
-Rules defined at https://eslint.org/docs/latest/rules/
+1. Rules defined at https://eslint.org/docs/latest/rules/
+2. Use script `src/extract.js` and copy results to `extracted.json`.
 
 Using script to extract them
 

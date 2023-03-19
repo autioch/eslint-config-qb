@@ -1,1083 +1,1083 @@
 [
     {
-        "name": "Possible Problems",
+        "label": "Possible Problems",
         "rules": [
             {
-                "name": "array-callback-return",
+                "label": "array-callback-return",
                 "comment": "Enforce return statements in callbacks of array methods"
             },
             {
-                "name": "constructor-super",
+                "label": "constructor-super",
                 "comment": "Require `super()` calls in constructors"
             },
             {
-                "name": "for-direction",
+                "label": "for-direction",
                 "comment": "Enforce \"for\" loop update clause moving the counter in the right direction"
             },
             {
-                "name": "getter-return",
+                "label": "getter-return",
                 "comment": "Enforce `return` statements in getters"
             },
             {
-                "name": "no-async-promise-executor",
+                "label": "no-async-promise-executor",
                 "comment": "Disallow using an async function as a Promise executor"
             },
             {
-                "name": "no-await-in-loop",
+                "label": "no-await-in-loop",
                 "comment": "Disallow `await` inside of loops"
             },
             {
-                "name": "no-class-assign",
+                "label": "no-class-assign",
                 "comment": "Disallow reassigning class members"
             },
             {
-                "name": "no-compare-neg-zero",
+                "label": "no-compare-neg-zero",
                 "comment": "Disallow comparing against -0"
             },
             {
-                "name": "no-cond-assign",
+                "label": "no-cond-assign",
                 "comment": "Disallow assignment operators in conditional expressions"
             },
             {
-                "name": "no-const-assign",
+                "label": "no-const-assign",
                 "comment": "Disallow reassigning `const` variables"
             },
             {
-                "name": "no-constant-binary-expression",
+                "label": "no-constant-binary-expression",
                 "comment": "Disallow expressions where the operation doesn't affect the value"
             },
             {
-                "name": "no-constant-condition",
+                "label": "no-constant-condition",
                 "comment": "Disallow constant expressions in conditions"
             },
             {
-                "name": "no-constructor-return",
+                "label": "no-constructor-return",
                 "comment": "Disallow returning value from constructor"
             },
             {
-                "name": "no-control-regex",
+                "label": "no-control-regex",
                 "comment": "Disallow control characters in regular expressions"
             },
             {
-                "name": "no-debugger",
+                "label": "no-debugger",
                 "comment": "Disallow the use of `debugger`"
             },
             {
-                "name": "no-dupe-args",
+                "label": "no-dupe-args",
                 "comment": "Disallow duplicate arguments in `function` definitions"
             },
             {
-                "name": "no-dupe-class-members",
+                "label": "no-dupe-class-members",
                 "comment": "Disallow duplicate class members"
             },
             {
-                "name": "no-dupe-else-if",
+                "label": "no-dupe-else-if",
                 "comment": "Disallow duplicate conditions in if-else-if chains"
             },
             {
-                "name": "no-dupe-keys",
+                "label": "no-dupe-keys",
                 "comment": "Disallow duplicate keys in object literals"
             },
             {
-                "name": "no-duplicate-case",
+                "label": "no-duplicate-case",
                 "comment": "Disallow duplicate case labels"
             },
             {
-                "name": "no-duplicate-imports",
+                "label": "no-duplicate-imports",
                 "comment": "Disallow duplicate module imports"
             },
             {
-                "name": "no-empty-character-class",
+                "label": "no-empty-character-class",
                 "comment": "Disallow empty character classes in regular expressions"
             },
             {
-                "name": "no-empty-pattern",
+                "label": "no-empty-pattern",
                 "comment": "Disallow empty destructuring patterns"
             },
             {
-                "name": "no-ex-assign",
+                "label": "no-ex-assign",
                 "comment": "Disallow reassigning exceptions in `catch` clauses"
             },
             {
-                "name": "no-fallthrough",
+                "label": "no-fallthrough",
                 "comment": "Disallow fallthrough of `case` statements"
             },
             {
-                "name": "no-func-assign",
+                "label": "no-func-assign",
                 "comment": "Disallow reassigning `function` declarations"
             },
             {
-                "name": "no-import-assign",
+                "label": "no-import-assign",
                 "comment": "Disallow assigning to imported bindings"
             },
             {
-                "name": "no-inner-declarations",
+                "label": "no-inner-declarations",
                 "comment": "Disallow variable or `function` declarations in nested blocks"
             },
             {
-                "name": "no-invalid-regexp",
+                "label": "no-invalid-regexp",
                 "comment": "Disallow invalid regular expression strings in `RegExp` constructors"
             },
             {
-                "name": "no-irregular-whitespace",
+                "label": "no-irregular-whitespace",
                 "comment": "Disallow irregular whitespace"
             },
             {
-                "name": "no-loss-of-precision",
+                "label": "no-loss-of-precision",
                 "comment": "Disallow literal numbers that lose precision"
             },
             {
-                "name": "no-misleading-character-class",
+                "label": "no-misleading-character-class",
                 "comment": "Disallow characters which are made with multiple code points in character class syntax"
             },
             {
-                "name": "no-new-native-nonconstructor",
+                "label": "no-new-native-nonconstructor",
                 "comment": "Disallow `new` operators with global non-constructor functions"
             },
             {
-                "name": "no-new-symbol",
+                "label": "no-new-symbol",
                 "comment": "Disallow `new` operators with the `Symbol` object"
             },
             {
-                "name": "no-obj-calls",
+                "label": "no-obj-calls",
                 "comment": "Disallow calling global object properties as functions"
             },
             {
-                "name": "no-promise-executor-return",
+                "label": "no-promise-executor-return",
                 "comment": "Disallow returning values from Promise executor functions"
             },
             {
-                "name": "no-prototype-builtins",
+                "label": "no-prototype-builtins",
                 "comment": "Disallow calling some `Object.prototype` methods directly on objects"
             },
             {
-                "name": "no-self-assign",
+                "label": "no-self-assign",
                 "comment": "Disallow assignments where both sides are exactly the same"
             },
             {
-                "name": "no-self-compare",
+                "label": "no-self-compare",
                 "comment": "Disallow comparisons where both sides are exactly the same"
             },
             {
-                "name": "no-setter-return",
+                "label": "no-setter-return",
                 "comment": "Disallow returning values from setters"
             },
             {
-                "name": "no-sparse-arrays",
+                "label": "no-sparse-arrays",
                 "comment": "Disallow sparse arrays"
             },
             {
-                "name": "no-template-curly-in-string",
+                "label": "no-template-curly-in-string",
                 "comment": "Disallow template literal placeholder syntax in regular strings"
             },
             {
-                "name": "no-this-before-super",
+                "label": "no-this-before-super",
                 "comment": "Disallow `this`/`super` before calling `super()` in constructors"
             },
             {
-                "name": "no-undef",
+                "label": "no-undef",
                 "comment": "Disallow the use of undeclared variables unless mentioned in `/*global */` comments"
             },
             {
-                "name": "no-unexpected-multiline",
+                "label": "no-unexpected-multiline",
                 "comment": "Disallow confusing multiline expressions"
             },
             {
-                "name": "no-unmodified-loop-condition",
+                "label": "no-unmodified-loop-condition",
                 "comment": "Disallow unmodified loop conditions"
             },
             {
-                "name": "no-unreachable",
+                "label": "no-unreachable",
                 "comment": "Disallow unreachable code after `return`, `throw`, `continue`, and `break` statements"
             },
             {
-                "name": "no-unreachable-loop",
+                "label": "no-unreachable-loop",
                 "comment": "Disallow loops with a body that allows only one iteration"
             },
             {
-                "name": "no-unsafe-finally",
+                "label": "no-unsafe-finally",
                 "comment": "Disallow control flow statements in `finally` blocks"
             },
             {
-                "name": "no-unsafe-negation",
+                "label": "no-unsafe-negation",
                 "comment": "Disallow negating the left operand of relational operators"
             },
             {
-                "name": "no-unsafe-optional-chaining",
+                "label": "no-unsafe-optional-chaining",
                 "comment": "Disallow use of optional chaining in contexts where the `undefined` value is not allowed"
             },
             {
-                "name": "no-unused-private-class-members",
+                "label": "no-unused-private-class-members",
                 "comment": "Disallow unused private class members"
             },
             {
-                "name": "no-unused-vars",
+                "label": "no-unused-vars",
                 "comment": "Disallow unused variables"
             },
             {
-                "name": "no-use-before-define",
+                "label": "no-use-before-define",
                 "comment": "Disallow the use of variables before they are defined"
             },
             {
-                "name": "no-useless-backreference",
+                "label": "no-useless-backreference",
                 "comment": "Disallow useless backreferences in regular expressions"
             },
             {
-                "name": "require-atomic-updates",
+                "label": "require-atomic-updates",
                 "comment": "Disallow assignments that can lead to race conditions due to usage of `await` or `yield`"
             },
             {
-                "name": "use-isnan",
+                "label": "use-isnan",
                 "comment": "Require calls to `isNaN()` when checking for `NaN`"
             },
             {
-                "name": "valid-typeof",
+                "label": "valid-typeof",
                 "comment": "Enforce comparing `typeof` expressions against valid strings"
             }
         ]
     },
     {
-        "name": "Suggestions",
+        "label": "Suggestions",
         "rules": [
             {
-                "name": "accessor-pairs",
+                "label": "accessor-pairs",
                 "comment": "Enforce getter and setter pairs in objects and classes"
             },
             {
-                "name": "arrow-body-style",
+                "label": "arrow-body-style",
                 "comment": "Require braces around arrow function bodies"
             },
             {
-                "name": "block-scoped-var",
+                "label": "block-scoped-var",
                 "comment": "Enforce the use of variables within the scope they are defined"
             },
             {
-                "name": "camelcase",
+                "label": "camelcase",
                 "comment": "Enforce camelcase naming convention"
             },
             {
-                "name": "capitalized-comments",
+                "label": "capitalized-comments",
                 "comment": "Enforce or disallow capitalization of the first letter of a comment"
             },
             {
-                "name": "class-methods-use-this",
+                "label": "class-methods-use-this",
                 "comment": "Enforce that class methods utilize `this`"
             },
             {
-                "name": "complexity",
+                "label": "complexity",
                 "comment": "Enforce a maximum cyclomatic complexity allowed in a program"
             },
             {
-                "name": "consistent-return",
+                "label": "consistent-return",
                 "comment": "Require `return` statements to either always or never specify values"
             },
             {
-                "name": "consistent-this",
+                "label": "consistent-this",
                 "comment": "Enforce consistent naming when capturing the current execution context"
             },
             {
-                "name": "curly",
+                "label": "curly",
                 "comment": "Enforce consistent brace style for all control statements"
             },
             {
-                "name": "default-case",
+                "label": "default-case",
                 "comment": "Require `default` cases in `switch` statements"
             },
             {
-                "name": "default-case-last",
+                "label": "default-case-last",
                 "comment": "Enforce default clauses in switch statements to be last"
             },
             {
-                "name": "default-param-last",
+                "label": "default-param-last",
                 "comment": "Enforce default parameters to be last"
             },
             {
-                "name": "dot-notation",
+                "label": "dot-notation",
                 "comment": "Enforce dot notation whenever possible"
             },
             {
-                "name": "eqeqeq",
+                "label": "eqeqeq",
                 "comment": "Require the use of `===` and `!==`"
             },
             {
-                "name": "func-name-matching",
+                "label": "func-name-matching",
                 "comment": "Require function names to match the name of the variable or property to which they are assigned"
             },
             {
-                "name": "func-names",
+                "label": "func-names",
                 "comment": "Require or disallow named `function` expressions"
             },
             {
-                "name": "func-style",
+                "label": "func-style",
                 "comment": "Enforce the consistent use of either `function` declarations or expressions"
             },
             {
-                "name": "grouped-accessor-pairs",
+                "label": "grouped-accessor-pairs",
                 "comment": "Require grouped accessor pairs in object literals and classes"
             },
             {
-                "name": "guard-for-in",
+                "label": "guard-for-in",
                 "comment": "Require `for-in` loops to include an `if` statement"
             },
             {
-                "name": "id-denylist",
+                "label": "id-denylist",
                 "comment": "Disallow specified identifiers"
             },
             {
-                "name": "id-length",
+                "label": "id-length",
                 "comment": "Enforce minimum and maximum identifier lengths"
             },
             {
-                "name": "id-match",
+                "label": "id-match",
                 "comment": "Require identifiers to match a specified regular expression"
             },
             {
-                "name": "init-declarations",
+                "label": "init-declarations",
                 "comment": "Require or disallow initialization in variable declarations"
             },
             {
-                "name": "logical-assignment-operators",
+                "label": "logical-assignment-operators",
                 "comment": "Require or disallow logical assignment logical operator shorthand"
             },
             {
-                "name": "max-classes-per-file",
+                "label": "max-classes-per-file",
                 "comment": "Enforce a maximum number of classes per file"
             },
             {
-                "name": "max-depth",
+                "label": "max-depth",
                 "comment": "Enforce a maximum depth that blocks can be nested"
             },
             {
-                "name": "max-lines",
+                "label": "max-lines",
                 "comment": "Enforce a maximum number of lines per file"
             },
             {
-                "name": "max-lines-per-function",
+                "label": "max-lines-per-function",
                 "comment": "Enforce a maximum number of lines of code in a function"
             },
             {
-                "name": "max-nested-callbacks",
+                "label": "max-nested-callbacks",
                 "comment": "Enforce a maximum depth that callbacks can be nested"
             },
             {
-                "name": "max-params",
+                "label": "max-params",
                 "comment": "Enforce a maximum number of parameters in function definitions"
             },
             {
-                "name": "max-statements",
+                "label": "max-statements",
                 "comment": "Enforce a maximum number of statements allowed in function blocks"
             },
             {
-                "name": "multiline-comment-style",
+                "label": "multiline-comment-style",
                 "comment": "Enforce a particular style for multiline comments"
             },
             {
-                "name": "new-cap",
+                "label": "new-cap",
                 "comment": "Require constructor names to begin with a capital letter"
             },
             {
-                "name": "no-alert",
+                "label": "no-alert",
                 "comment": "Disallow the use of `alert`, `confirm`, and `prompt`"
             },
             {
-                "name": "no-array-constructor",
+                "label": "no-array-constructor",
                 "comment": "Disallow `Array` constructors"
             },
             {
-                "name": "no-bitwise",
+                "label": "no-bitwise",
                 "comment": "Disallow bitwise operators"
             },
             {
-                "name": "no-caller",
+                "label": "no-caller",
                 "comment": "Disallow the use of `arguments.caller` or `arguments.callee`"
             },
             {
-                "name": "no-case-declarations",
+                "label": "no-case-declarations",
                 "comment": "Disallow lexical declarations in case clauses"
             },
             {
-                "name": "no-confusing-arrow",
+                "label": "no-confusing-arrow",
                 "comment": "Disallow arrow functions where they could be confused with comparisons"
             },
             {
-                "name": "no-console",
+                "label": "no-console",
                 "comment": "Disallow the use of `console`"
             },
             {
-                "name": "no-continue",
+                "label": "no-continue",
                 "comment": "Disallow `continue` statements"
             },
             {
-                "name": "no-delete-var",
+                "label": "no-delete-var",
                 "comment": "Disallow deleting variables"
             },
             {
-                "name": "no-div-regex",
+                "label": "no-div-regex",
                 "comment": "Disallow division operators explicitly at the beginning of regular expressions"
             },
             {
-                "name": "no-else-return",
+                "label": "no-else-return",
                 "comment": "Disallow `else` blocks after `return` statements in `if` statements"
             },
             {
-                "name": "no-empty",
+                "label": "no-empty",
                 "comment": "Disallow empty block statements"
             },
             {
-                "name": "no-empty-function",
+                "label": "no-empty-function",
                 "comment": "Disallow empty functions"
             },
             {
-                "name": "no-empty-static-block",
+                "label": "no-empty-static-block",
                 "comment": "Disallow empty static blocks"
             },
             {
-                "name": "no-eq-null",
+                "label": "no-eq-null",
                 "comment": "Disallow `null` comparisons without type-checking operators"
             },
             {
-                "name": "no-eval",
+                "label": "no-eval",
                 "comment": "Disallow the use of `eval()`"
             },
             {
-                "name": "no-extend-native",
+                "label": "no-extend-native",
                 "comment": "Disallow extending native types"
             },
             {
-                "name": "no-extra-bind",
+                "label": "no-extra-bind",
                 "comment": "Disallow unnecessary calls to `.bind()`"
             },
             {
-                "name": "no-extra-boolean-cast",
+                "label": "no-extra-boolean-cast",
                 "comment": "Disallow unnecessary boolean casts"
             },
             {
-                "name": "no-extra-label",
+                "label": "no-extra-label",
                 "comment": "Disallow unnecessary labels"
             },
             {
-                "name": "no-extra-semi",
+                "label": "no-extra-semi",
                 "comment": "Disallow unnecessary semicolons"
             },
             {
-                "name": "no-floating-decimal",
+                "label": "no-floating-decimal",
                 "comment": "Disallow leading or trailing decimal points in numeric literals"
             },
             {
-                "name": "no-global-assign",
+                "label": "no-global-assign",
                 "comment": "Disallow assignments to native objects or read-only global variables"
             },
             {
-                "name": "no-implicit-coercion",
+                "label": "no-implicit-coercion",
                 "comment": "Disallow shorthand type conversions"
             },
             {
-                "name": "no-implicit-globals",
+                "label": "no-implicit-globals",
                 "comment": "Disallow declarations in the global scope"
             },
             {
-                "name": "no-implied-eval",
+                "label": "no-implied-eval",
                 "comment": "Disallow the use of `eval()`-like methods"
             },
             {
-                "name": "no-inline-comments",
+                "label": "no-inline-comments",
                 "comment": "Disallow inline comments after code"
             },
             {
-                "name": "no-invalid-this",
+                "label": "no-invalid-this",
                 "comment": "Disallow use of `this` in contexts where the value of `this` is `undefined`"
             },
             {
-                "name": "no-iterator",
+                "label": "no-iterator",
                 "comment": "Disallow the use of the `__iterator__` property"
             },
             {
-                "name": "no-label-var",
+                "label": "no-label-var",
                 "comment": "Disallow labels that share a name with a variable"
             },
             {
-                "name": "no-labels",
+                "label": "no-labels",
                 "comment": "Disallow labeled statements"
             },
             {
-                "name": "no-lone-blocks",
+                "label": "no-lone-blocks",
                 "comment": "Disallow unnecessary nested blocks"
             },
             {
-                "name": "no-lonely-if",
+                "label": "no-lonely-if",
                 "comment": "Disallow `if` statements as the only statement in `else` blocks"
             },
             {
-                "name": "no-loop-func",
+                "label": "no-loop-func",
                 "comment": "Disallow function declarations that contain unsafe references inside loop statements"
             },
             {
-                "name": "no-magic-numbers",
+                "label": "no-magic-numbers",
                 "comment": "Disallow magic numbers"
             },
             {
-                "name": "no-mixed-operators",
+                "label": "no-mixed-operators",
                 "comment": "Disallow mixed binary operators"
             },
             {
-                "name": "no-multi-assign",
+                "label": "no-multi-assign",
                 "comment": "Disallow use of chained assignment expressions"
             },
             {
-                "name": "no-multi-str",
+                "label": "no-multi-str",
                 "comment": "Disallow multiline strings"
             },
             {
-                "name": "no-negated-condition",
+                "label": "no-negated-condition",
                 "comment": "Disallow negated conditions"
             },
             {
-                "name": "no-nested-ternary",
+                "label": "no-nested-ternary",
                 "comment": "Disallow nested ternary expressions"
             },
             {
-                "name": "no-new",
+                "label": "no-new",
                 "comment": "Disallow `new` operators outside of assignments or comparisons"
             },
             {
-                "name": "no-new-func",
+                "label": "no-new-func",
                 "comment": "Disallow `new` operators with the `Function` object"
             },
             {
-                "name": "no-new-object",
+                "label": "no-new-object",
                 "comment": "Disallow `Object` constructors"
             },
             {
-                "name": "no-new-wrappers",
+                "label": "no-new-wrappers",
                 "comment": "Disallow `new` operators with the `String`, `Number`, and `Boolean` objects"
             },
             {
-                "name": "no-nonoctal-decimal-escape",
+                "label": "no-nonoctal-decimal-escape",
                 "comment": "Disallow `\\8` and `\\9` escape sequences in string literals"
             },
             {
-                "name": "no-octal",
+                "label": "no-octal",
                 "comment": "Disallow octal literals"
             },
             {
-                "name": "no-octal-escape",
+                "label": "no-octal-escape",
                 "comment": "Disallow octal escape sequences in string literals"
             },
             {
-                "name": "no-param-reassign",
+                "label": "no-param-reassign",
                 "comment": "Disallow reassigning `function` parameters"
             },
             {
-                "name": "no-plusplus",
+                "label": "no-plusplus",
                 "comment": "Disallow the unary operators `++` and `--`"
             },
             {
-                "name": "no-proto",
+                "label": "no-proto",
                 "comment": "Disallow the use of the `__proto__` property"
             },
             {
-                "name": "no-redeclare",
+                "label": "no-redeclare",
                 "comment": "Disallow variable redeclaration"
             },
             {
-                "name": "no-regex-spaces",
+                "label": "no-regex-spaces",
                 "comment": "Disallow multiple spaces in regular expressions"
             },
             {
-                "name": "no-restricted-exports",
+                "label": "no-restricted-exports",
                 "comment": "Disallow specified names in exports"
             },
             {
-                "name": "no-restricted-globals",
+                "label": "no-restricted-globals",
                 "comment": "Disallow specified global variables"
             },
             {
-                "name": "no-restricted-imports",
+                "label": "no-restricted-imports",
                 "comment": "Disallow specified modules when loaded by `import`"
             },
             {
-                "name": "no-restricted-properties",
+                "label": "no-restricted-properties",
                 "comment": "Disallow certain properties on certain objects"
             },
             {
-                "name": "no-restricted-syntax",
+                "label": "no-restricted-syntax",
                 "comment": "Disallow specified syntax"
             },
             {
-                "name": "no-return-assign",
+                "label": "no-return-assign",
                 "comment": "Disallow assignment operators in `return` statements"
             },
             {
-                "name": "no-return-await",
+                "label": "no-return-await",
                 "comment": "Disallow unnecessary `return await`"
             },
             {
-                "name": "no-script-url",
+                "label": "no-script-url",
                 "comment": "Disallow `javascript:` urls"
             },
             {
-                "name": "no-sequences",
+                "label": "no-sequences",
                 "comment": "Disallow comma operators"
             },
             {
-                "name": "no-shadow",
+                "label": "no-shadow",
                 "comment": "Disallow variable declarations from shadowing variables declared in the outer scope"
             },
             {
-                "name": "no-shadow-restricted-names",
+                "label": "no-shadow-restricted-names",
                 "comment": "Disallow identifiers from shadowing restricted names"
             },
             {
-                "name": "no-ternary",
+                "label": "no-ternary",
                 "comment": "Disallow ternary operators"
             },
             {
-                "name": "no-throw-literal",
+                "label": "no-throw-literal",
                 "comment": "Disallow throwing literals as exceptions"
             },
             {
-                "name": "no-undef-init",
+                "label": "no-undef-init",
                 "comment": "Disallow initializing variables to `undefined`"
             },
             {
-                "name": "no-undefined",
+                "label": "no-undefined",
                 "comment": "Disallow the use of `undefined` as an identifier"
             },
             {
-                "name": "no-underscore-dangle",
+                "label": "no-underscore-dangle",
                 "comment": "Disallow dangling underscores in identifiers"
             },
             {
-                "name": "no-unneeded-ternary",
+                "label": "no-unneeded-ternary",
                 "comment": "Disallow ternary operators when simpler alternatives exist"
             },
             {
-                "name": "no-unused-expressions",
+                "label": "no-unused-expressions",
                 "comment": "Disallow unused expressions"
             },
             {
-                "name": "no-unused-labels",
+                "label": "no-unused-labels",
                 "comment": "Disallow unused labels"
             },
             {
-                "name": "no-useless-call",
+                "label": "no-useless-call",
                 "comment": "Disallow unnecessary calls to `.call()` and `.apply()`"
             },
             {
-                "name": "no-useless-catch",
+                "label": "no-useless-catch",
                 "comment": "Disallow unnecessary `catch` clauses"
             },
             {
-                "name": "no-useless-computed-key",
+                "label": "no-useless-computed-key",
                 "comment": "Disallow unnecessary computed property keys in objects and classes"
             },
             {
-                "name": "no-useless-concat",
+                "label": "no-useless-concat",
                 "comment": "Disallow unnecessary concatenation of literals or template literals"
             },
             {
-                "name": "no-useless-constructor",
+                "label": "no-useless-constructor",
                 "comment": "Disallow unnecessary constructors"
             },
             {
-                "name": "no-useless-escape",
+                "label": "no-useless-escape",
                 "comment": "Disallow unnecessary escape characters"
             },
             {
-                "name": "no-useless-rename",
+                "label": "no-useless-rename",
                 "comment": "Disallow renaming import, export, and destructured assignments to the same name"
             },
             {
-                "name": "no-useless-return",
+                "label": "no-useless-return",
                 "comment": "Disallow redundant return statements"
             },
             {
-                "name": "no-var",
+                "label": "no-var",
                 "comment": "Require `let` or `const` instead of `var`"
             },
             {
-                "name": "no-void",
+                "label": "no-void",
                 "comment": "Disallow `void` operators"
             },
             {
-                "name": "no-warning-comments",
+                "label": "no-warning-comments",
                 "comment": "Disallow specified warning terms in comments"
             },
             {
-                "name": "no-with",
+                "label": "no-with",
                 "comment": "Disallow `with` statements"
             },
             {
-                "name": "object-shorthand",
+                "label": "object-shorthand",
                 "comment": "Require or disallow method and property shorthand syntax for object literals"
             },
             {
-                "name": "one-var",
+                "label": "one-var",
                 "comment": "Enforce variables to be declared either together or separately in functions"
             },
             {
-                "name": "one-var-declaration-per-line",
+                "label": "one-var-declaration-per-line",
                 "comment": "Require or disallow newlines around variable declarations"
             },
             {
-                "name": "operator-assignment",
+                "label": "operator-assignment",
                 "comment": "Require or disallow assignment operator shorthand where possible"
             },
             {
-                "name": "prefer-arrow-callback",
+                "label": "prefer-arrow-callback",
                 "comment": "Require using arrow functions for callbacks"
             },
             {
-                "name": "prefer-const",
+                "label": "prefer-const",
                 "comment": "Require `const` declarations for variables that are never reassigned after declared"
             },
             {
-                "name": "prefer-destructuring",
+                "label": "prefer-destructuring",
                 "comment": "Require destructuring from arrays and/or objects"
             },
             {
-                "name": "prefer-exponentiation-operator",
+                "label": "prefer-exponentiation-operator",
                 "comment": "Disallow the use of `Math.pow` in favor of the `**` operator"
             },
             {
-                "name": "prefer-named-capture-group",
+                "label": "prefer-named-capture-group",
                 "comment": "Enforce using named capture group in regular expression"
             },
             {
-                "name": "prefer-numeric-literals",
+                "label": "prefer-numeric-literals",
                 "comment": "Disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals"
             },
             {
-                "name": "prefer-object-has-own",
+                "label": "prefer-object-has-own",
                 "comment": "Disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn()`"
             },
             {
-                "name": "prefer-object-spread",
+                "label": "prefer-object-spread",
                 "comment": "Disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead"
             },
             {
-                "name": "prefer-promise-reject-errors",
+                "label": "prefer-promise-reject-errors",
                 "comment": "Require using Error objects as Promise rejection reasons"
             },
             {
-                "name": "prefer-regex-literals",
+                "label": "prefer-regex-literals",
                 "comment": "Disallow use of the `RegExp` constructor in favor of regular expression literals"
             },
             {
-                "name": "prefer-rest-params",
+                "label": "prefer-rest-params",
                 "comment": "Require rest parameters instead of `arguments`"
             },
             {
-                "name": "prefer-spread",
+                "label": "prefer-spread",
                 "comment": "Require spread operators instead of `.apply()`"
             },
             {
-                "name": "prefer-template",
+                "label": "prefer-template",
                 "comment": "Require template literals instead of string concatenation"
             },
             {
-                "name": "quote-props",
+                "label": "quote-props",
                 "comment": "Require quotes around object literal property names"
             },
             {
-                "name": "radix",
+                "label": "radix",
                 "comment": "Enforce the consistent use of the radix argument when using `parseInt()`"
             },
             {
-                "name": "require-await",
+                "label": "require-await",
                 "comment": "Disallow async functions which have no `await` expression"
             },
             {
-                "name": "require-unicode-regexp",
+                "label": "require-unicode-regexp",
                 "comment": "Enforce the use of `u` flag on RegExp"
             },
             {
-                "name": "require-yield",
+                "label": "require-yield",
                 "comment": "Require generator functions to contain `yield`"
             },
             {
-                "name": "sort-imports",
+                "label": "sort-imports",
                 "comment": "Enforce sorted import declarations within modules"
             },
             {
-                "name": "sort-keys",
+                "label": "sort-keys",
                 "comment": "Require object keys to be sorted"
             },
             {
-                "name": "sort-vars",
+                "label": "sort-vars",
                 "comment": "Require variables within the same declaration block to be sorted"
             },
             {
-                "name": "spaced-comment",
+                "label": "spaced-comment",
                 "comment": "Enforce consistent spacing after the `//` or `/*` in a comment"
             },
             {
-                "name": "strict",
+                "label": "strict",
                 "comment": "Require or disallow strict mode directives"
             },
             {
-                "name": "symbol-description",
+                "label": "symbol-description",
                 "comment": "Require symbol descriptions"
             },
             {
-                "name": "vars-on-top",
+                "label": "vars-on-top",
                 "comment": "Require `var` declarations be placed at the top of their containing scope"
             },
             {
-                "name": "yoda",
+                "label": "yoda",
                 "comment": "Require or disallow \"Yoda\" conditions"
             }
         ]
     },
     {
-        "name": "Layout and Formatting",
+        "label": "Layout and Formatting",
         "rules": [
             {
-                "name": "array-bracket-newline",
+                "label": "array-bracket-newline",
                 "comment": "Enforce linebreaks after opening and before closing array brackets"
             },
             {
-                "name": "array-bracket-spacing",
+                "label": "array-bracket-spacing",
                 "comment": "Enforce consistent spacing inside array brackets"
             },
             {
-                "name": "array-element-newline",
+                "label": "array-element-newline",
                 "comment": "Enforce line breaks after each array element"
             },
             {
-                "name": "arrow-parens",
+                "label": "arrow-parens",
                 "comment": "Require parentheses around arrow function arguments"
             },
             {
-                "name": "arrow-spacing",
+                "label": "arrow-spacing",
                 "comment": "Enforce consistent spacing before and after the arrow in arrow functions"
             },
             {
-                "name": "block-spacing",
+                "label": "block-spacing",
                 "comment": "Disallow or enforce spaces inside of blocks after opening block and before closing block"
             },
             {
-                "name": "brace-style",
+                "label": "brace-style",
                 "comment": "Enforce consistent brace style for blocks"
             },
             {
-                "name": "comma-dangle",
+                "label": "comma-dangle",
                 "comment": "Require or disallow trailing commas"
             },
             {
-                "name": "comma-spacing",
+                "label": "comma-spacing",
                 "comment": "Enforce consistent spacing before and after commas"
             },
             {
-                "name": "comma-style",
+                "label": "comma-style",
                 "comment": "Enforce consistent comma style"
             },
             {
-                "name": "computed-property-spacing",
+                "label": "computed-property-spacing",
                 "comment": "Enforce consistent spacing inside computed property brackets"
             },
             {
-                "name": "dot-location",
+                "label": "dot-location",
                 "comment": "Enforce consistent newlines before and after dots"
             },
             {
-                "name": "eol-last",
+                "label": "eol-last",
                 "comment": "Require or disallow newline at the end of files"
             },
             {
-                "name": "func-call-spacing",
+                "label": "func-call-spacing",
                 "comment": "Require or disallow spacing between function identifiers and their invocations"
             },
             {
-                "name": "function-call-argument-newline",
+                "label": "function-call-argument-newline",
                 "comment": "Enforce line breaks between arguments of a function call"
             },
             {
-                "name": "function-paren-newline",
+                "label": "function-paren-newline",
                 "comment": "Enforce consistent line breaks inside function parentheses"
             },
             {
-                "name": "generator-star-spacing",
+                "label": "generator-star-spacing",
                 "comment": "Enforce consistent spacing around `*` operators in generator functions"
             },
             {
-                "name": "implicit-arrow-linebreak",
+                "label": "implicit-arrow-linebreak",
                 "comment": "Enforce the location of arrow function bodies"
             },
             {
-                "name": "indent",
+                "label": "indent",
                 "comment": "Enforce consistent indentation"
             },
             {
-                "name": "jsx-quotes",
+                "label": "jsx-quotes",
                 "comment": "Enforce the consistent use of either double or single quotes in JSX attributes"
             },
             {
-                "name": "key-spacing",
+                "label": "key-spacing",
                 "comment": "Enforce consistent spacing between keys and values in object literal properties"
             },
             {
-                "name": "keyword-spacing",
+                "label": "keyword-spacing",
                 "comment": "Enforce consistent spacing before and after keywords"
             },
             {
-                "name": "line-comment-position",
+                "label": "line-comment-position",
                 "comment": "Enforce position of line comments"
             },
             {
-                "name": "linebreak-style",
+                "label": "linebreak-style",
                 "comment": "Enforce consistent linebreak style"
             },
             {
-                "name": "lines-around-comment",
+                "label": "lines-around-comment",
                 "comment": "Require empty lines around comments"
             },
             {
-                "name": "lines-between-class-members",
+                "label": "lines-between-class-members",
                 "comment": "Require or disallow an empty line between class members"
             },
             {
-                "name": "max-len",
+                "label": "max-len",
                 "comment": "Enforce a maximum line length"
             },
             {
-                "name": "max-statements-per-line",
+                "label": "max-statements-per-line",
                 "comment": "Enforce a maximum number of statements allowed per line"
             },
             {
-                "name": "multiline-ternary",
+                "label": "multiline-ternary",
                 "comment": "Enforce newlines between operands of ternary expressions"
             },
             {
-                "name": "new-parens",
+                "label": "new-parens",
                 "comment": "Enforce or disallow parentheses when invoking a constructor with no arguments"
             },
             {
-                "name": "newline-per-chained-call",
+                "label": "newline-per-chained-call",
                 "comment": "Require a newline after each call in a method chain"
             },
             {
-                "name": "no-extra-parens",
+                "label": "no-extra-parens",
                 "comment": "Disallow unnecessary parentheses"
             },
             {
-                "name": "no-mixed-spaces-and-tabs",
+                "label": "no-mixed-spaces-and-tabs",
                 "comment": "Disallow mixed spaces and tabs for indentation"
             },
             {
-                "name": "no-multi-spaces",
+                "label": "no-multi-spaces",
                 "comment": "Disallow multiple spaces"
             },
             {
-                "name": "no-multiple-empty-lines",
+                "label": "no-multiple-empty-lines",
                 "comment": "Disallow multiple empty lines"
             },
             {
-                "name": "no-tabs",
+                "label": "no-tabs",
                 "comment": "Disallow all tabs"
             },
             {
-                "name": "no-trailing-spaces",
+                "label": "no-trailing-spaces",
                 "comment": "Disallow trailing whitespace at the end of lines"
             },
             {
-                "name": "no-whitespace-before-property",
+                "label": "no-whitespace-before-property",
                 "comment": "Disallow whitespace before properties"
             },
             {
-                "name": "nonblock-statement-body-position",
+                "label": "nonblock-statement-body-position",
                 "comment": "Enforce the location of single-line statements"
             },
             {
-                "name": "object-curly-newline",
+                "label": "object-curly-newline",
                 "comment": "Enforce consistent line breaks after opening and before closing braces"
             },
             {
-                "name": "object-curly-spacing",
+                "label": "object-curly-spacing",
                 "comment": "Enforce consistent spacing inside braces"
             },
             {
-                "name": "object-property-newline",
+                "label": "object-property-newline",
                 "comment": "Enforce placing object properties on separate lines"
             },
             {
-                "name": "operator-linebreak",
+                "label": "operator-linebreak",
                 "comment": "Enforce consistent linebreak style for operators"
             },
             {
-                "name": "padded-blocks",
+                "label": "padded-blocks",
                 "comment": "Require or disallow padding within blocks"
             },
             {
-                "name": "padding-line-between-statements",
+                "label": "padding-line-between-statements",
                 "comment": "Require or disallow padding lines between statements"
             },
             {
-                "name": "quotes",
+                "label": "quotes",
                 "comment": "Enforce the consistent use of either backticks, double, or single quotes"
             },
             {
-                "name": "rest-spread-spacing",
+                "label": "rest-spread-spacing",
                 "comment": "Enforce spacing between rest and spread operators and their expressions"
             },
             {
-                "name": "semi",
+                "label": "semi",
                 "comment": "Require or disallow semicolons instead of ASI"
             },
             {
-                "name": "semi-spacing",
+                "label": "semi-spacing",
                 "comment": "Enforce consistent spacing before and after semicolons"
             },
             {
-                "name": "semi-style",
+                "label": "semi-style",
                 "comment": "Enforce location of semicolons"
             },
             {
-                "name": "space-before-blocks",
+                "label": "space-before-blocks",
                 "comment": "Enforce consistent spacing before blocks"
             },
             {
-                "name": "space-before-function-paren",
+                "label": "space-before-function-paren",
                 "comment": "Enforce consistent spacing before `function` definition opening parenthesis"
             },
             {
-                "name": "space-in-parens",
+                "label": "space-in-parens",
                 "comment": "Enforce consistent spacing inside parentheses"
             },
             {
-                "name": "space-infix-ops",
+                "label": "space-infix-ops",
                 "comment": "Require spacing around infix operators"
             },
             {
-                "name": "space-unary-ops",
+                "label": "space-unary-ops",
                 "comment": "Enforce consistent spacing before or after unary operators"
             },
             {
-                "name": "switch-colon-spacing",
+                "label": "switch-colon-spacing",
                 "comment": "Enforce spacing around colons of switch statements"
             },
             {
-                "name": "template-curly-spacing",
+                "label": "template-curly-spacing",
                 "comment": "Require or disallow spacing around embedded expressions of template strings"
             },
             {
-                "name": "template-tag-spacing",
+                "label": "template-tag-spacing",
                 "comment": "Require or disallow spacing between template tags and their literals"
             },
             {
-                "name": "unicode-bom",
+                "label": "unicode-bom",
                 "comment": "Require or disallow Unicode byte order mark (BOM)"
             },
             {
-                "name": "wrap-iife",
+                "label": "wrap-iife",
                 "comment": "Require parentheses around immediate `function` invocations"
             },
             {
-                "name": "wrap-regex",
+                "label": "wrap-regex",
                 "comment": "Require parenthesis around regex literals"
             },
             {
-                "name": "yield-star-spacing",
+                "label": "yield-star-spacing",
                 "comment": "Require or disallow spacing around the `*` in `yield*` expressions"
             }
         ]
