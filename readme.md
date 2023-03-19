@@ -19,3 +19,6 @@ Rules defined at https://eslint.org/docs/latest/rules/
 
 Using script to extract them
 
+## TODO
+- add npm ignore
+- describe dev/update process

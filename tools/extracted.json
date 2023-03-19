@@ -830,7 +830,7 @@
         ]
     },
     {
-        "name": "Layout & Formatting",
+        "name": "Layout and Formatting",
         "rules": [
             {
                 "name": "array-bracket-newline",
