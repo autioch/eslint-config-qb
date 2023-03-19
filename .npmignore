@@ -2,3 +2,4 @@ src/*
 originalRules/*
 added.json
 removed.json
+.eslintrc.js
