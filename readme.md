@@ -20,7 +20,7 @@ Custom configuration for eslint.
 ## Updating
 1. Rules defined at https://eslint.org/docs/latest/rules/
 2. Use script `src/extract.js` in Chrome dev tools and copy results to `./src/extracted.json`.
-3. Run `npm run build` to update the `index.js` file.
+3. Run `npm run update` to update the `index.json` file.
 
 ## TODO
 - overrides for test files and other
