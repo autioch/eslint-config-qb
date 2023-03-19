@@ -5,7 +5,9 @@
   "keywords": [
     "eslint",
     "eslint-config",
-    "eslintconfig"
+    "eslintconfig",
+    "eslint-plugin",
+    "eslintplugin"
   ],
   "bugs": {
     "url": "https://github.com/autioch/eslint-config-qb/issues"

@@ -12,3 +12,10 @@ Custom configuration for eslint.
 - simple and easy to understand code,
 - no tricks,
 - no hacks.
+
+
+## Development
+Rules defined at https://eslint.org/docs/latest/rules/
+
+Using script to extract them
+
