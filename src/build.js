@@ -3,18 +3,7 @@ const { join } = require('node:path');
 const extracted = require('./extracted.json');
 
 const SEP = '\r\n';
-const INDENT = `${SEP}    `;
-
-const customOverrides = {
-  'function-call-argument-newline': [
-    'error',
-    'consistent'
-  ],
-  'array-element-newline': [
-    'error',
-    'consistent'
-  ]
-};
+const IND = `${SEP}    `;
 
 const baseConfig = `/* eslint-disable max-lines, max-len, no-magic-numbers */${SEP}module.exports = {
   parserOptions: {
@@ -33,38 +22,16 @@ const saveFile = (fileName, fileData) => fs.writeFile(join(__dirname, fileName),
 const filterObject = (obj, callbackFn) => Object.fromEntries(Object.entries(obj).filter(callbackFn));
 
 (async () => {
-  const existingOverrides = filterObject(require(`../index.js`).rules, isCustomConfig);
+  const overrides = filterObject(require(`../index.js`).rules, isCustomConfig);
 
-  await saveFile('overrides.json', JSON.stringify(existingOverrides, null, '  '));
+  const withOverrides = extracted.map((ruleName) => {
+    const config = overrides[label] ? JSON.stringify(overrides[label]).split('\n').join(IND) : `['error']`;
 
-  const overrides = {
-    ...existingOverrides,
-    ...customOverrides
-  };
+    return `${IND}// ${comment}${IND}'${label}': ${config}`;
+  });
 
-  const usedOverrides = new Set();
+  const data = `${baseConfig}rules: {${withOverrides.join(`,${SEP}`)}}${SEP}};${SEP}`;
 
-  const allRules = extracted.flatMap((group) => group.rules.map(({ label, comment }) => {
-    const config = overrides[label] ? JSON.stringify(overrides[label]) : `['error']`;
-
-    if (overrides[label]) {
-      usedOverrides.add(label);
-    }
-
-    return `${INDENT}// ${comment}${INDENT}'${label}': ${config.split('\n').join(INDENT)}`;
-  })).join(`,${SEP}`);
-
-  const data = `${baseConfig}rules: {${allRules}}${SEP}};${SEP}`;
-
+  await saveFile('overrides.json', JSON.stringify(overrides, null, '  '));
   await saveFile(join('..', 'index.js'), data);
-
-  const unusedOverrides = new Set(Object.keys(overrides).filter((label) => !usedOverrides.has(label)));
-
-  if (unusedOverrides.size) {
-    console.warn('Unused overrides saved in a separte file.');
-
-    const filtered = filterObject(overrides, ([key]) => unusedOverrides.has(key));
-
-    await saveFile('overrides.unused.json', JSON.stringify(filtered, null, '  '));
-  }
 })();
