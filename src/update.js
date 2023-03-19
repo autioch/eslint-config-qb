@@ -10,7 +10,6 @@ const saveFile = (fileName, fileData) => fs.writeFile(join(__dirname, '..', file
 (async () => {
   // const oldRuleDict = originalRules;
   const { rules: oldRuleDict } = oldConfig;
-
   const newRuleList = newRuleNameList.map((ruleName) => [ruleName, oldRuleDict[ruleName] || ['error']]);
 
   // Provide some info on what changed
@@ -20,6 +19,7 @@ const saveFile = (fileName, fileData) => fs.writeFile(join(__dirname, '..', file
 
   if (removed.length) {
     console.warn('Old rules have been removed: ', ...removed);
+
     const withSettings = Object.fromEntries(removed.map((ruleName) => [ruleName, oldRuleDict[ruleName]]));
 
     await saveFile('removed.json', JSON.stringify(withSettings, null, '  '));
@@ -27,6 +27,7 @@ const saveFile = (fileName, fileData) => fs.writeFile(join(__dirname, '..', file
 
   if (added.length) {
     console.warn('New rules have been added with default config: ', ...added);
+
     await saveFile('added.json', JSON.stringify(added, null, '  '));
   }
 

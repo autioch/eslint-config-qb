@@ -317,7 +317,9 @@
       "warn"
     ],
     "id-denylist": [
-      "error"
+      "error",
+      "item",
+      "data"
     ],
     "id-length": [
       "error",
@@ -335,7 +337,11 @@
       "off"
     ],
     "logical-assignment-operators": [
-      "error"
+      "error",
+      "always",
+      {
+        "enforceForIfStatements": true
+      }
     ],
     "max-classes-per-file": [
       "error"
@@ -605,7 +611,7 @@
       "error"
     ],
     "no-restricted-exports": [
-      "error"
+      "off"
     ],
     "no-restricted-globals": [
       "error"
@@ -802,7 +808,10 @@
       }
     ],
     "prefer-regex-literals": [
-      "error"
+      "error",
+      {
+        "disallowRedundantWrapping": true
+      }
     ],
     "prefer-rest-params": [
       "error"
@@ -952,7 +961,8 @@
       "consistent"
     ],
     "function-paren-newline": [
-      "error"
+      "error",
+      "never"
     ],
     "generator-star-spacing": [
       "error",
@@ -1147,7 +1157,25 @@
       }
     ],
     "padding-line-between-statements": [
-      "error"
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": [
+          "const",
+          "let",
+          "var"
+        ]
+      }
     ],
     "quotes": [
       "error",

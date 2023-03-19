@@ -24,3 +24,8 @@ Custom configuration for eslint.
 
 ## TODO
 - overrides for test files and other
+
+## Ideas
+- https://github.com/SonarSource/eslint-plugin-sonarjs
+- https://github.com/mysticatea/eslint-plugin-node
+- https://github.com/eslint-community/eslint-plugin-promise
