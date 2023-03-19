@@ -2,11 +2,13 @@ const fs = require('node:fs/promises');
 const { join } = require('node:path');
 const newRuleNameList = require('./extracted.json');
 const oldConfig = require('../index.json');
+const originalRules = require('../originalRules');
 
 const saveFile = (fileName, fileData) => fs.writeFile(join(__dirname, '..', fileName), fileData, 'utf-8');
 
 (async () => {
-  const { rules: oldRuleDict } = oldConfig;
+  // const { rules: oldRuleDict } = oldConfig;
+  const oldRuleDict = originalRules;
   const newRuleList = newRuleNameList.map((ruleName) => [ruleName, oldRuleDict[ruleName] || ['error']]);
 
   // Provide some info on what changed

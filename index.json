@@ -880,8 +880,7 @@
       }
     ],
     "array-element-newline": [
-      "error",
-      "consistent"
+      "error"
     ],
     "arrow-parens": [
       "error",
@@ -948,8 +947,7 @@
       "never"
     ],
     "function-call-argument-newline": [
-      "error",
-      "consistent"
+      "error"
     ],
     "function-paren-newline": [
       "error"
