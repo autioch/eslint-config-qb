@@ -26,10 +26,10 @@ const baseConfig = `/* eslint-disable max-lines, max-len, no-magic-numbers */${S
     'shared-node-browser': true,
     browser: true,
     node: true
-  },${SEP}`;
+  },${SEP}  `;
 
-const isCustomConfig = ([value]) => value.length !== 1 || value[0] !== 'error';
-const saveFile = (fileName, fileData) => fs.writeFile(join(__dirname, '..', fileName), fileData, 'utf-8');
+const isCustomConfig = ([, value]) => value.length !== 1 || value[0] !== 'error';
+const saveFile = (fileName, fileData) => fs.writeFile(join(__dirname, fileName), fileData, 'utf-8');
 const filterObject = (obj, callbackFn) => Object.fromEntries(Object.entries(obj).filter(callbackFn));
 
 (async () => {
@@ -45,7 +45,7 @@ const filterObject = (obj, callbackFn) => Object.fromEntries(Object.entries(obj)
   const usedOverrides = new Set();
 
   const allRules = extracted.flatMap((group) => group.rules.map(({ label, comment }) => {
-    const config = overrides[label] ? JSON.stringify(overrides[label], null, '  ') : `['error']`;
+    const config = overrides[label] ? JSON.stringify(overrides[label]) : `['error']`;
 
     if (overrides[label]) {
       usedOverrides.add(label);
@@ -56,7 +56,7 @@ const filterObject = (obj, callbackFn) => Object.fromEntries(Object.entries(obj)
 
   const data = `${baseConfig}rules: {${allRules}}${SEP}};${SEP}`;
 
-  await saveFile('index.js', data);
+  await saveFile(join('..', 'index.js'), data);
 
   const unusedOverrides = new Set(Object.keys(overrides).filter((label) => !usedOverrides.has(label)));
 

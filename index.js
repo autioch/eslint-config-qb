@@ -36,10 +36,7 @@ module.exports = {
     'no-compare-neg-zero': ['error'],
 
     // Disallow assignment operators in conditional expressions
-    'no-cond-assign': [
-      'error',
-      'except-parens'
-    ],
+    'no-cond-assign': ['error', 'except-parens'],
 
     // Disallow reassigning `const` variables
     'no-const-assign': ['error'],
@@ -49,8 +46,7 @@ module.exports = {
 
     // Disallow constant expressions in conditions
     'no-constant-condition': [
-      'error',
-      {
+      'error', {
         checkLoops: true
       }
     ],
@@ -81,8 +77,7 @@ module.exports = {
 
     // Disallow duplicate module imports
     'no-duplicate-imports': [
-      'error',
-      {
+      'error', {
         includeExports: false
       }
     ],
@@ -106,23 +101,18 @@ module.exports = {
     'no-import-assign': ['error'],
 
     // Disallow variable or `function` declarations in nested blocks
-    'no-inner-declarations': [
-      'error',
-      'both'
-    ],
+    'no-inner-declarations': ['error', 'both'],
 
     // Disallow invalid regular expression strings in `RegExp` constructors
     'no-invalid-regexp': [
-      'error',
-      {
+      'error', {
         allowConstructorFlags: []
       }
     ],
 
     // Disallow irregular whitespace
     'no-irregular-whitespace': [
-      'error',
-      {
+      'error', {
         skipComments: false,
         skipRegExps: false,
         skipStrings: false,
@@ -153,8 +143,7 @@ module.exports = {
 
     // Disallow assignments where both sides are exactly the same
     'no-self-assign': [
-      'error',
-      {
+      'error', {
         props: true
       }
     ],
@@ -176,8 +165,7 @@ module.exports = {
 
     // Disallow the use of undeclared variables unless mentioned in `/*global */` comments
     'no-undef': [
-      'error',
-      {
+      'error', {
         'typeof': true
       }
     ],
@@ -208,8 +196,7 @@ module.exports = {
 
     // Disallow unused variables
     'no-unused-vars': [
-      'error',
-      {
+      'error', {
         args: 'all',
         caughtErrors: 'all',
         ignoreRestSiblings: false,
@@ -219,8 +206,7 @@ module.exports = {
 
     // Disallow the use of variables before they are defined
     'no-use-before-define': [
-      'error',
-      {
+      'error', {
         classes: true,
         functions: true,
         variables: true
@@ -238,16 +224,14 @@ module.exports = {
 
     // Enforce comparing `typeof` expressions against valid strings
     'valid-typeof': [
-      'error',
-      {
+      'error', {
         requireStringLiterals: false
       }
     ],
 
     // Enforce getter and setter pairs in objects and classes
     'accessor-pairs': [
-      'error',
-      {
+      'error', {
         getWithoutSet: false,
         setWithoutGet: true
       }
@@ -255,9 +239,7 @@ module.exports = {
 
     // Require braces around arrow function bodies
     'arrow-body-style': [
-      'error',
-      'as-needed',
-      {
+      'error', 'as-needed', {
         requireReturnForObjectLiteral: false
       }
     ],
@@ -267,17 +249,14 @@ module.exports = {
 
     // Enforce camelcase naming convention
     camelcase: [
-      'error',
-      {
+      'error', {
         properties: 'always'
       }
     ],
 
     // Enforce or disallow capitalization of the first letter of a comment
     'capitalized-comments': [
-      'off',
-      'always',
-      {
+      'off', 'always', {
         ignoreConsecutiveComments: false,
         ignoreInlineComments: false
       }
@@ -285,39 +264,30 @@ module.exports = {
 
     // Enforce that class methods utilize `this`
     'class-methods-use-this': [
-      'error',
-      {
+      'error', {
         exceptMethods: []
       }
     ],
 
     // Enforce a maximum cyclomatic complexity allowed in a program
     complexity: [
-      'error',
-      {
+      'error', {
         max: 20
       }
     ],
 
     // Require `return` statements to either always or never specify values
     'consistent-return': [
-      'error',
-      {
+      'error', {
         treatUndefinedAsUnspecified: true
       }
     ],
 
     // Enforce consistent naming when capturing the current execution context
-    'consistent-this': [
-      'error',
-      'that'
-    ],
+    'consistent-this': ['error', 'that'],
 
     // Enforce consistent brace style for all control statements
-    curly: [
-      'error',
-      'all'
-    ],
+    curly: ['error', 'all'],
 
     // Require `default` cases in `switch` statements
     'default-case': ['error'],
@@ -330,8 +300,7 @@ module.exports = {
 
     // Enforce dot notation whenever possible
     'dot-notation': [
-      'error',
-      {
+      'error', {
         allowKeywords: true
       }
     ],
@@ -343,16 +312,11 @@ module.exports = {
     'func-name-matching': ['error'],
 
     // Require or disallow named `function` expressions
-    'func-names': [
-      'error',
-      'always'
-    ],
+    'func-names': ['error', 'always'],
 
     // Enforce the consistent use of either `function` declarations or expressions
     'func-style': [
-      'error',
-      'declaration',
-      {
+      'error', 'declaration', {
         allowArrowFunctions: true
       }
     ],
@@ -368,8 +332,7 @@ module.exports = {
 
     // Enforce minimum and maximum identifier lengths
     'id-length': [
-      'error',
-      {
+      'error', {
         exceptions: [],
         max: 30,
         min: 2,
@@ -391,16 +354,14 @@ module.exports = {
 
     // Enforce a maximum depth that blocks can be nested
     'max-depth': [
-      'error',
-      {
+      'error', {
         max: 4
       }
     ],
 
     // Enforce a maximum number of lines per file
     'max-lines': [
-      'error',
-      {
+      'error', {
         max: 300,
         skipBlankLines: true,
         skipComments: true
@@ -412,27 +373,23 @@ module.exports = {
 
     // Enforce a maximum depth that callbacks can be nested
     'max-nested-callbacks': [
-      'error',
-      {
+      'error', {
         max: 3
       }
     ],
 
     // Enforce a maximum number of parameters in function definitions
     'max-params': [
-      'error',
-      {
+      'error', {
         max: 4
       }
     ],
 
     // Enforce a maximum number of statements allowed in function blocks
     'max-statements': [
-      'error',
-      {
+      'error', {
         max: 20
-      },
-      {
+      }, {
         ignoreTopLevelFunctions: false
       }
     ],
@@ -442,8 +399,7 @@ module.exports = {
 
     // Require constructor names to begin with a capital letter
     'new-cap': [
-      'error',
-      {
+      'error', {
         newIsCap: true,
         capIsNew: true,
         newIsCapExceptions: [],
@@ -460,8 +416,7 @@ module.exports = {
 
     // Disallow bitwise operators
     'no-bitwise': [
-      'error',
-      {
+      'error', {
         allow: [],
         int32Hint: false
       }
@@ -475,16 +430,14 @@ module.exports = {
 
     // Disallow arrow functions where they could be confused with comparisons
     'no-confusing-arrow': [
-      'error',
-      {
+      'error', {
         allowParens: false
       }
     ],
 
     // Disallow the use of `console`
     'no-console': [
-      'error',
-      {
+      'error', {
         allow: ['warn']
       }
     ],
@@ -503,8 +456,7 @@ module.exports = {
 
     // Disallow empty block statements
     'no-empty': [
-      'error',
-      {
+      'error', {
         allowEmptyCatch: true
       }
     ],
@@ -523,8 +475,7 @@ module.exports = {
 
     // Disallow extending native types
     'no-extend-native': [
-      'error',
-      {
+      'error', {
         exceptions: []
       }
     ],
@@ -546,16 +497,14 @@ module.exports = {
 
     // Disallow assignments to native objects or read-only global variables
     'no-global-assign': [
-      'error',
-      {
+      'error', {
         exceptions: []
       }
     ],
 
     // Disallow shorthand type conversions
     'no-implicit-coercion': [
-      'error',
-      {
+      'error', {
         allow: ['!!'],
         'boolean': true,
         number: true,
@@ -583,8 +532,7 @@ module.exports = {
 
     // Disallow labeled statements
     'no-labels': [
-      'error',
-      {
+      'error', {
         allowLoop: false,
         allowSwitch: false
       }
@@ -601,24 +549,17 @@ module.exports = {
 
     // Disallow magic numbers
     'no-magic-numbers': [
-      'error',
-      {
+      'error', {
         detectObjects: true,
         enforceConst: true,
-        ignore: [
-          -1,
-          0,
-          1,
-          10
-        ],
+        ignore: [-1, 0, 1, 10],
         ignoreArrayIndexes: false
       }
     ],
 
     // Disallow mixed binary operators
     'no-mixed-operators': [
-      'error',
-      {
+      'error', {
         allowSamePrecedence: true,
         groups: []
       }
@@ -659,16 +600,14 @@ module.exports = {
 
     // Disallow reassigning `function` parameters
     'no-param-reassign': [
-      'error',
-      {
+      'error', {
         props: false
       }
     ],
 
     // Disallow the unary operators `++` and `--`
     'no-plusplus': [
-      'error',
-      {
+      'error', {
         allowForLoopAfterthoughts: true
       }
     ],
@@ -678,8 +617,7 @@ module.exports = {
 
     // Disallow variable redeclaration
     'no-redeclare': [
-      'error',
-      {
+      'error', {
         builtinGlobals: true
       }
     ],
@@ -695,12 +633,8 @@ module.exports = {
 
     // Disallow specified modules when loaded by `import`
     'no-restricted-imports': [
-      'error',
-      {
-        paths: [
-          'underscore',
-          'ramda'
-        ]
+      'error', {
+        paths: ['underscore', 'ramda']
       }
     ],
 
@@ -711,10 +645,7 @@ module.exports = {
     'no-restricted-syntax': ['error'],
 
     // Disallow assignment operators in `return` statements
-    'no-return-assign': [
-      'error',
-      'always'
-    ],
+    'no-return-assign': ['error', 'always'],
 
     // Disallow unnecessary `return await`
     'no-return-await': ['error'],
@@ -727,8 +658,7 @@ module.exports = {
 
     // Disallow variable declarations from shadowing variables declared in the outer scope
     'no-shadow': [
-      'error',
-      {
+      'error', {
         allow: [],
         builtinGlobals: true,
         hoist: 'all'
@@ -752,8 +682,7 @@ module.exports = {
 
     // Disallow dangling underscores in identifiers
     'no-underscore-dangle': [
-      'error',
-      {
+      'error', {
         allow: [],
         allowAfterSuper: false,
         allowAfterThis: false
@@ -762,16 +691,14 @@ module.exports = {
 
     // Disallow ternary operators when simpler alternatives exist
     'no-unneeded-ternary': [
-      'error',
-      {
+      'error', {
         defaultAssignment: true
       }
     ],
 
     // Disallow unused expressions
     'no-unused-expressions': [
-      'error',
-      {
+      'error', {
         allowShortCircuit: false,
         allowTernary: false
       }
@@ -800,8 +727,7 @@ module.exports = {
 
     // Disallow renaming import, export, and destructured assignments to the same name
     'no-useless-rename': [
-      'error',
-      {
+      'error', {
         ignoreDestructuring: false,
         ignoreExport: false,
         ignoreImport: false
@@ -819,13 +745,9 @@ module.exports = {
 
     // Disallow specified warning terms in comments
     'no-warning-comments': [
-      'error',
-      {
+      'error', {
         location: 'start',
-        terms: [
-          'fixme',
-          'xxx'
-        ]
+        terms: ['fixme', 'xxx']
       }
     ],
 
@@ -834,9 +756,7 @@ module.exports = {
 
     // Require or disallow method and property shorthand syntax for object literals
     'object-shorthand': [
-      'error',
-      'always',
-      {
+      'error', 'always', {
         avoidExplicitReturnArrows: true,
         avoidQuotes: false,
         ignoreConstructors: false
@@ -845,37 +765,28 @@ module.exports = {
 
     // Enforce variables to be declared either together or separately in functions
     'one-var': [
-      'error',
-      {
+      'error', {
         initialized: 'never',
         uninitialized: 'never'
       }
     ],
 
     // Require or disallow newlines around variable declarations
-    'one-var-declaration-per-line': [
-      'error',
-      'always'
-    ],
+    'one-var-declaration-per-line': ['error', 'always'],
 
     // Require or disallow assignment operator shorthand where possible
-    'operator-assignment': [
-      'off',
-      'never'
-    ],
+    'operator-assignment': ['off', 'never'],
 
     // Require using arrow functions for callbacks
     'prefer-arrow-callback': [
-      'error',
-      {
+      'error', {
         allowNamedFunctions: true
       }
     ],
 
     // Require `const` declarations for variables that are never reassigned after declared
     'prefer-const': [
-      'error',
-      {
+      'error', {
         destructuring: 'any',
         ignoreReadBeforeAssign: false
       }
@@ -883,12 +794,10 @@ module.exports = {
 
     // Require destructuring from arrays and/or objects
     'prefer-destructuring': [
-      'error',
-      {
+      'error', {
         array: true,
         object: true
-      },
-      {
+      }, {
         enforceForRenamedProperties: false
       }
     ],
@@ -910,8 +819,7 @@ module.exports = {
 
     // Require using Error objects as Promise rejection reasons
     'prefer-promise-reject-errors': [
-      'error',
-      {
+      'error', {
         allowEmptyReject: false
       }
     ],
@@ -930,9 +838,7 @@ module.exports = {
 
     // Require quotes around object literal property names
     'quote-props': [
-      'error',
-      'as-needed',
-      {
+      'error', 'as-needed', {
         keywords: true,
         unnecessary: true,
         numbers: true
@@ -940,10 +846,7 @@ module.exports = {
     ],
 
     // Enforce the consistent use of the radix argument when using `parseInt()`
-    radix: [
-      'error',
-      'always'
-    ],
+    radix: ['error', 'always'],
 
     // Disallow async functions which have no `await` expression
     'require-await': ['error'],
@@ -962,17 +865,14 @@ module.exports = {
 
     // Require variables within the same declaration block to be sorted
     'sort-vars': [
-      'error',
-      {
+      'error', {
         ignoreCase: true
       }
     ],
 
     // Enforce consistent spacing after the `//` or `/*` in a comment
     'spaced-comment': [
-      'error',
-      'always',
-      {
+      'error', 'always', {
         exceptions: [],
         markers: []
       }
@@ -995,9 +895,7 @@ module.exports = {
 
     // Enforce consistent spacing inside array brackets
     'array-bracket-spacing': [
-      'error',
-      'never',
-      {
+      'error', 'never', {
         arraysInArrays: true,
         objectsInArrays: false,
         singleValue: false
@@ -1005,24 +903,18 @@ module.exports = {
     ],
 
     // Enforce line breaks after each array element
-    'array-element-newline': [
-      'error',
-      'consistent'
-    ],
+    'array-element-newline': ['error', 'consistent'],
 
     // Require parentheses around arrow function arguments
     'arrow-parens': [
-      'error',
-      'always',
-      {
+      'error', 'always', {
         requireForBlockBody: true
       }
     ],
 
     // Enforce consistent spacing before and after the arrow in arrow functions
     'arrow-spacing': [
-      'error',
-      {
+      'error', {
         after: true,
         before: true
       }
@@ -1033,17 +925,14 @@ module.exports = {
 
     // Enforce consistent brace style for blocks
     'brace-style': [
-      'error',
-      '1tbs',
-      {
+      'error', '1tbs', {
         allowSingleLine: false
       }
     ],
 
     // Require or disallow trailing commas
     'comma-dangle': [
-      'error',
-      {
+      'error', {
         arrays: 'never',
         objects: 'never',
         imports: 'never',
@@ -1054,8 +943,7 @@ module.exports = {
 
     // Enforce consistent spacing before and after commas
     'comma-spacing': [
-      'error',
-      {
+      'error', {
         after: true,
         before: false
       }
@@ -1063,50 +951,32 @@ module.exports = {
 
     // Enforce consistent comma style
     'comma-style': [
-      'error',
-      'last',
-      {
+      'error', 'last', {
         exceptions: {}
       }
     ],
 
     // Enforce consistent spacing inside computed property brackets
-    'computed-property-spacing': [
-      'error',
-      'never'
-    ],
+    'computed-property-spacing': ['error', 'never'],
 
     // Enforce consistent newlines before and after dots
-    'dot-location': [
-      'error',
-      'property'
-    ],
+    'dot-location': ['error', 'property'],
 
     // Require or disallow newline at the end of files
-    'eol-last': [
-      'error',
-      'always'
-    ],
+    'eol-last': ['error', 'always'],
 
     // Require or disallow spacing between function identifiers and their invocations
-    'func-call-spacing': [
-      'error',
-      'never'
-    ],
+    'func-call-spacing': ['error', 'never'],
 
     // Enforce line breaks between arguments of a function call
-    'function-call-argument-newline': [
-      'error',
-      'consistent'
-    ],
+    'function-call-argument-newline': ['error', 'consistent'],
 
     // Enforce consistent line breaks inside function parentheses
     'function-paren-newline': ['error'],
 
     // Enforce consistent spacing around `*` operators in generator functions
     'generator-star-spacing': [
-      'error',
-      {
+      'error', {
         after: true,
         before: true
       }
@@ -1117,9 +987,7 @@ module.exports = {
 
     // Enforce consistent indentation
     indent: [
-      'error',
-      2,
-      {
+      'error', 2, {
         ArrayExpression: 1,
         CallExpression: {
           arguments: 'first'
@@ -1145,15 +1013,11 @@ module.exports = {
     ],
 
     // Enforce the consistent use of either double or single quotes in JSX attributes
-    'jsx-quotes': [
-      'error',
-      'prefer-double'
-    ],
+    'jsx-quotes': ['error', 'prefer-double'],
 
     // Enforce consistent spacing between keys and values in object literal properties
     'key-spacing': [
-      'error',
-      {
+      'error', {
         beforeColon: false,
         afterColon: true,
         mode: 'strict'
@@ -1162,8 +1026,7 @@ module.exports = {
 
     // Enforce consistent spacing before and after keywords
     'keyword-spacing': [
-      'error',
-      {
+      'error', {
         after: true,
         before: true,
         overrides: {}
@@ -1172,22 +1035,17 @@ module.exports = {
 
     // Enforce position of line comments
     'line-comment-position': [
-      'error',
-      {
+      'error', {
         position: 'above'
       }
     ],
 
     // Enforce consistent linebreak style
-    'linebreak-style': [
-      'error',
-      'windows'
-    ],
+    'linebreak-style': ['error', 'windows'],
 
     // Require empty lines around comments
     'lines-around-comment': [
-      'error',
-      {
+      'error', {
         afterBlockComment: false,
         afterLineComment: false,
         beforeBlockComment: true,
@@ -1208,42 +1066,34 @@ module.exports = {
 
     // Enforce a maximum line length
     'max-len': [
-      'error',
-      {
+      'error', {
         code: 120
       }
     ],
 
     // Enforce a maximum number of statements allowed per line
     'max-statements-per-line': [
-      'error',
-      {
+      'error', {
         max: 1
       }
     ],
 
     // Enforce newlines between operands of ternary expressions
-    'multiline-ternary': [
-      'error',
-      'never'
-    ],
+    'multiline-ternary': ['error', 'never'],
 
     // Enforce or disallow parentheses when invoking a constructor with no arguments
     'new-parens': ['error'],
 
     // Require a newline after each call in a method chain
     'newline-per-chained-call': [
-      'error',
-      {
+      'error', {
         ignoreChainWithDepth: 3
       }
     ],
 
     // Disallow unnecessary parentheses
     'no-extra-parens': [
-      'error',
-      'all',
-      {
+      'error', 'all', {
         conditionalAssign: true,
         ignoreJSX: 'all',
         nestedBinaryExpressions: false,
@@ -1256,16 +1106,14 @@ module.exports = {
 
     // Disallow multiple spaces
     'no-multi-spaces': [
-      'error',
-      {
+      'error', {
         exceptions: {}
       }
     ],
 
     // Disallow multiple empty lines
     'no-multiple-empty-lines': [
-      'error',
-      {
+      'error', {
         max: 1,
         maxBOF: 0,
         maxEOF: 1
@@ -1277,8 +1125,7 @@ module.exports = {
 
     // Disallow trailing whitespace at the end of lines
     'no-trailing-spaces': [
-      'error',
-      {
+      'error', {
         skipBlankLines: false
       }
     ],
@@ -1287,15 +1134,11 @@ module.exports = {
     'no-whitespace-before-property': ['error'],
 
     // Enforce the location of single-line statements
-    'nonblock-statement-body-position': [
-      'error',
-      'below'
-    ],
+    'nonblock-statement-body-position': ['error', 'below'],
 
     // Enforce consistent line breaks after opening and before closing braces
     'object-curly-newline': [
-      'error',
-      {
+      'error', {
         ObjectExpression: {
           minProperties: 1
         },
@@ -1307,9 +1150,7 @@ module.exports = {
 
     // Enforce consistent spacing inside braces
     'object-curly-spacing': [
-      'error',
-      'always',
-      {
+      'error', 'always', {
         arraysInObjects: true,
         objectsInObjects: true
       }
@@ -1317,22 +1158,17 @@ module.exports = {
 
     // Enforce placing object properties on separate lines
     'object-property-newline': [
-      'error',
-      {
+      'error', {
         allowMultiplePropertiesPerLine: false
       }
     ],
 
     // Enforce consistent linebreak style for operators
-    'operator-linebreak': [
-      'error',
-      'after'
-    ],
+    'operator-linebreak': ['error', 'after'],
 
     // Require or disallow padding within blocks
     'padded-blocks': [
-      'error',
-      {
+      'error', {
         blocks: 'never',
         classes: 'never',
         switches: 'never'
@@ -1344,33 +1180,25 @@ module.exports = {
 
     // Enforce the consistent use of either backticks, double, or single quotes
     quotes: [
-      'error',
-      'single',
-      {
+      'error', 'single', {
         allowTemplateLiterals: true,
         avoidEscape: true
       }
     ],
 
     // Enforce spacing between rest and spread operators and their expressions
-    'rest-spread-spacing': [
-      'error',
-      'never'
-    ],
+    'rest-spread-spacing': ['error', 'never'],
 
     // Require or disallow semicolons instead of ASI
     semi: [
-      'error',
-      'always',
-      {
+      'error', 'always', {
         omitLastInOneLineBlock: false
       }
     ],
 
     // Enforce consistent spacing before and after semicolons
     'semi-spacing': [
-      'error',
-      {
+      'error', {
         after: true,
         before: false
       }
@@ -1381,8 +1209,7 @@ module.exports = {
 
     // Enforce consistent spacing before blocks
     'space-before-blocks': [
-      'error',
-      {
+      'error', {
         functions: 'always',
         keywords: 'always',
         classes: 'always'
@@ -1391,8 +1218,7 @@ module.exports = {
 
     // Enforce consistent spacing before `function` definition opening parenthesis
     'space-before-function-paren': [
-      'error',
-      {
+      'error', {
         anonymous: 'never',
         named: 'never',
         asyncArrow: 'ignore'
@@ -1400,23 +1226,18 @@ module.exports = {
     ],
 
     // Enforce consistent spacing inside parentheses
-    'space-in-parens': [
-      'error',
-      'never'
-    ],
+    'space-in-parens': ['error', 'never'],
 
     // Require spacing around infix operators
     'space-infix-ops': [
-      'error',
-      {
+      'error', {
         int32Hint: false
       }
     ],
 
     // Enforce consistent spacing before or after unary operators
     'space-unary-ops': [
-      'error',
-      {
+      'error', {
         words: true,
         nonwords: false,
         overrides: {}
@@ -1427,28 +1248,17 @@ module.exports = {
     'switch-colon-spacing': ['error'],
 
     // Require or disallow spacing around embedded expressions of template strings
-    'template-curly-spacing': [
-      'error',
-      'never'
-    ],
+    'template-curly-spacing': ['error', 'never'],
 
     // Require or disallow spacing between template tags and their literals
-    'template-tag-spacing': [
-      'error',
-      'never'
-    ],
+    'template-tag-spacing': ['error', 'never'],
 
     // Require or disallow Unicode byte order mark (BOM)
-    'unicode-bom': [
-      'error',
-      'never'
-    ],
+    'unicode-bom': ['error', 'never'],
 
     // Require parentheses around immediate `function` invocations
     'wrap-iife': [
-      'error',
-      'inside',
-      {
+      'error', 'inside', {
         functionPrototypeMethods: false
       }
     ],
@@ -1458,8 +1268,7 @@ module.exports = {
 
     // Require or disallow spacing around the `*` in `yield*` expressions
     'yield-star-spacing': [
-      'error',
-      {
+      'error', {
         after: true,
         before: true
       }
