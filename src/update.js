@@ -21,13 +21,13 @@ const plugins = {
 
 (async () => {
   const { rules: oldRuleDict } = oldConfig;
-  const newRuleList = [...newRuleNameList, ...Object.keys(plugins)]
-    .map((ruleName) => [ruleName, oldRuleDict[ruleName] || plugins[ruleName] || ['error']]);
+  const allRules = [...newRuleNameList, ...Object.keys(plugins)];
+  const newRuleList = allRules.map((ruleName) => [ruleName, oldRuleDict[ruleName] || plugins[ruleName] || ['error']]);
 
   // Provide some info on what changed
-  const currentSet = new Set(newRuleNameList);
+  const currentSet = new Set(allRules);
   const removed = Object.keys(oldRuleDict).filter((rule) => !currentSet.has(rule));
-  const added = newRuleNameList.filter((rule) => !oldRuleDict[rule]);
+  const added = allRules.filter((rule) => !oldRuleDict[rule]);
 
   if (removed.length) {
     console.warn('Old rules have been removed: ', ...removed);

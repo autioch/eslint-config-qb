@@ -684,7 +684,9 @@
     "no-underscore-dangle": [
       "error",
       {
-        "allow": ["__"],
+        "allow": [
+          "__"
+        ],
         "allowInArrayDestructuring": false,
         "allowInObjectDestructuring": false,
         "allowFunctionParams": false
