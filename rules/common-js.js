@@ -11,10 +11,12 @@ module.exports = {
     'handle-callback-err': ['error', 'err'],
 
     // Disallow require calls to be mixed with regular variable declarations
-    'no-mixed-requires': ['error', {
-      allowCall: false,
-      grouping: true
-    }],
+    'no-mixed-requires': [
+      'error', {
+        allowCall: false,
+        grouping: true
+      }
+    ],
 
     // Disallow new operators with calls to require
     'no-new-require': ['error'],

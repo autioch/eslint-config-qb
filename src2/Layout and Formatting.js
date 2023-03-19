@@ -5,12 +5,12 @@ module.exports = {
 
     // Enforce consistent spacing inside array brackets
     'array-bracket-spacing': [
-      "error",
-      "never",
+      'error',
+      'never',
       {
-        "arraysInArrays": true,
-        "objectsInArrays": false,
-        "singleValue": false
+        arraysInArrays: true,
+        objectsInArrays: false,
+        singleValue: false
       }
     ],
 
@@ -19,19 +19,19 @@ module.exports = {
 
     // Require parentheses around arrow function arguments
     'arrow-parens': [
-      "error",
-      "always",
+      'error',
+      'always',
       {
-        "requireForBlockBody": true
+        requireForBlockBody: true
       }
     ],
 
     // Enforce consistent spacing before and after the arrow in arrow functions
     'arrow-spacing': [
-      "error",
+      'error',
       {
-        "after": true,
-        "before": true
+        after: true,
+        before: true
       }
     ],
 
@@ -40,65 +40,65 @@ module.exports = {
 
     // Enforce consistent brace style for blocks
     'brace-style': [
-      "error",
-      "1tbs",
+      'error',
+      '1tbs',
       {
-        "allowSingleLine": false
+        allowSingleLine: false
       }
     ],
 
     // Require or disallow trailing commas
     'comma-dangle': [
-      "error",
+      'error',
       {
-        "arrays": "never",
-        "objects": "never",
-        "imports": "never",
-        "exports": "never",
-        "functions": "never"
+        arrays: 'never',
+        objects: 'never',
+        imports: 'never',
+        exports: 'never',
+        functions: 'never'
       }
     ],
 
     // Enforce consistent spacing before and after commas
     'comma-spacing': [
-      "error",
+      'error',
       {
-        "after": true,
-        "before": false
+        after: true,
+        before: false
       }
     ],
 
     // Enforce consistent comma style
     'comma-style': [
-      "error",
-      "last",
+      'error',
+      'last',
       {
-        "exceptions": {}
+        exceptions: {}
       }
     ],
 
     // Enforce consistent spacing inside computed property brackets
     'computed-property-spacing': [
-      "error",
-      "never"
+      'error',
+      'never'
     ],
 
     // Enforce consistent newlines before and after dots
     'dot-location': [
-      "error",
-      "property"
+      'error',
+      'property'
     ],
 
     // Require or disallow newline at the end of files
     'eol-last': [
-      "error",
-      "always"
+      'error',
+      'always'
     ],
 
     // Require or disallow spacing between function identifiers and their invocations
     'func-call-spacing': [
-      "error",
-      "never"
+      'error',
+      'never'
     ],
 
     // Enforce line breaks between arguments of a function call
@@ -109,10 +109,10 @@ module.exports = {
 
     // Enforce consistent spacing around `*` operators in generator functions
     'generator-star-spacing': [
-      "error",
+      'error',
       {
-        "after": true,
-        "before": true
+        after: true,
+        before: true
       }
     ],
 
@@ -120,90 +120,90 @@ module.exports = {
     'implicit-arrow-linebreak': ['error'],
 
     // Enforce consistent indentation
-    'indent': [
-      "error",
+    indent: [
+      'error',
       2,
       {
-        "ArrayExpression": 1,
-        "CallExpression": {
-          "arguments": "first"
+        ArrayExpression: 1,
+        CallExpression: {
+          arguments: 'first'
         },
-        "FunctionDeclaration": {
-          "body": 1,
-          "parameters": "first"
+        FunctionDeclaration: {
+          body: 1,
+          parameters: 'first'
         },
-        "FunctionExpression": {
-          "body": 1,
-          "parameters": "first"
+        FunctionExpression: {
+          body: 1,
+          parameters: 'first'
         },
-        "MemberExpression": 1,
-        "ObjectExpression": 1,
-        "SwitchCase": 1,
-        "VariableDeclarator": {
-          "const": 3,
-          "let": 2,
-          "var": 2
+        MemberExpression: 1,
+        ObjectExpression: 1,
+        SwitchCase: 1,
+        VariableDeclarator: {
+          'const': 3,
+          let: 2,
+          'var': 2
         },
-        "outerIIFEBody": 1
+        outerIIFEBody: 1
       }
     ],
 
     // Enforce the consistent use of either double or single quotes in JSX attributes
     'jsx-quotes': [
-      "error",
-      "prefer-double"
+      'error',
+      'prefer-double'
     ],
 
     // Enforce consistent spacing between keys and values in object literal properties
     'key-spacing': [
-      "error",
+      'error',
       {
-        "beforeColon": false,
-        "afterColon": true,
-        "mode": "strict"
+        beforeColon: false,
+        afterColon: true,
+        mode: 'strict'
       }
     ],
 
     // Enforce consistent spacing before and after keywords
     'keyword-spacing': [
-      "error",
+      'error',
       {
-        "after": true,
-        "before": true,
-        "overrides": {}
+        after: true,
+        before: true,
+        overrides: {}
       }
     ],
 
     // Enforce position of line comments
     'line-comment-position': [
-      "error",
+      'error',
       {
-        "position": "above"
+        position: 'above'
       }
     ],
 
     // Enforce consistent linebreak style
     'linebreak-style': [
-      "error",
-      "windows"
+      'error',
+      'windows'
     ],
 
     // Require empty lines around comments
     'lines-around-comment': [
-      "error",
+      'error',
       {
-        "afterBlockComment": false,
-        "afterLineComment": false,
-        "beforeBlockComment": true,
-        "beforeLineComment": true,
-        "allowBlockStart": true,
-        "allowBlockEnd": false,
-        "allowObjectStart": true,
-        "allowObjectEnd": false,
-        "allowArrayStart": true,
-        "allowArrayEnd": false,
-        "ignorePattern": "eslint",
-        "applyDefaultIgnorePatterns": false
+        afterBlockComment: false,
+        afterLineComment: false,
+        beforeBlockComment: true,
+        beforeLineComment: true,
+        allowBlockStart: true,
+        allowBlockEnd: false,
+        allowObjectStart: true,
+        allowObjectEnd: false,
+        allowArrayStart: true,
+        allowArrayEnd: false,
+        ignorePattern: 'eslint',
+        applyDefaultIgnorePatterns: false
       }
     ],
 
@@ -212,24 +212,24 @@ module.exports = {
 
     // Enforce a maximum line length
     'max-len': [
-      "error",
+      'error',
       {
-        "code": 120
+        code: 120
       }
     ],
 
     // Enforce a maximum number of statements allowed per line
     'max-statements-per-line': [
-      "error",
+      'error',
       {
-        "max": 1
+        max: 1
       }
     ],
 
     // Enforce newlines between operands of ternary expressions
     'multiline-ternary': [
-      "error",
-      "never"
+      'error',
+      'never'
     ],
 
     // Enforce or disallow parentheses when invoking a constructor with no arguments
@@ -237,21 +237,21 @@ module.exports = {
 
     // Require a newline after each call in a method chain
     'newline-per-chained-call': [
-      "error",
+      'error',
       {
-        "ignoreChainWithDepth": 3
+        ignoreChainWithDepth: 3
       }
     ],
 
     // Disallow unnecessary parentheses
     'no-extra-parens': [
-      "error",
-      "all",
+      'error',
+      'all',
       {
-        "conditionalAssign": true,
-        "ignoreJSX": "all",
-        "nestedBinaryExpressions": false,
-        "returnAssign": true
+        conditionalAssign: true,
+        ignoreJSX: 'all',
+        nestedBinaryExpressions: false,
+        returnAssign: true
       }
     ],
 
@@ -260,19 +260,19 @@ module.exports = {
 
     // Disallow multiple spaces
     'no-multi-spaces': [
-      "error",
+      'error',
       {
-        "exceptions": {}
+        exceptions: {}
       }
     ],
 
     // Disallow multiple empty lines
     'no-multiple-empty-lines': [
-      "error",
+      'error',
       {
-        "max": 1,
-        "maxBOF": 0,
-        "maxEOF": 1
+        max: 1,
+        maxBOF: 0,
+        maxEOF: 1
       }
     ],
 
@@ -281,9 +281,9 @@ module.exports = {
 
     // Disallow trailing whitespace at the end of lines
     'no-trailing-spaces': [
-      "error",
+      'error',
       {
-        "skipBlankLines": false
+        skipBlankLines: false
       }
     ],
 
@@ -292,54 +292,54 @@ module.exports = {
 
     // Enforce the location of single-line statements
     'nonblock-statement-body-position': [
-      "error",
-      "below"
+      'error',
+      'below'
     ],
 
     // Enforce consistent line breaks after opening and before closing braces
     'object-curly-newline': [
-      "error",
+      'error',
       {
-        "ObjectExpression": {
-          "minProperties": 1
+        ObjectExpression: {
+          minProperties: 1
         },
-        "ObjectPattern": {
-          "multiline": true
+        ObjectPattern: {
+          multiline: true
         }
       }
     ],
 
     // Enforce consistent spacing inside braces
     'object-curly-spacing': [
-      "error",
-      "always",
+      'error',
+      'always',
       {
-        "arraysInObjects": true,
-        "objectsInObjects": true
+        arraysInObjects: true,
+        objectsInObjects: true
       }
     ],
 
     // Enforce placing object properties on separate lines
     'object-property-newline': [
-      "error",
+      'error',
       {
-        "allowMultiplePropertiesPerLine": false
+        allowMultiplePropertiesPerLine: false
       }
     ],
 
     // Enforce consistent linebreak style for operators
     'operator-linebreak': [
-      "error",
-      "after"
+      'error',
+      'after'
     ],
 
     // Require or disallow padding within blocks
     'padded-blocks': [
-      "error",
+      'error',
       {
-        "blocks": "never",
-        "classes": "never",
-        "switches": "never"
+        blocks: 'never',
+        classes: 'never',
+        switches: 'never'
       }
     ],
 
@@ -347,36 +347,36 @@ module.exports = {
     'padding-line-between-statements': ['error'],
 
     // Enforce the consistent use of either backticks, double, or single quotes
-    'quotes': [
-      "error",
-      "single",
+    quotes: [
+      'error',
+      'single',
       {
-        "allowTemplateLiterals": true,
-        "avoidEscape": true
+        allowTemplateLiterals: true,
+        avoidEscape: true
       }
     ],
 
     // Enforce spacing between rest and spread operators and their expressions
     'rest-spread-spacing': [
-      "error",
-      "never"
+      'error',
+      'never'
     ],
 
     // Require or disallow semicolons instead of ASI
-    'semi': [
-      "error",
-      "always",
+    semi: [
+      'error',
+      'always',
       {
-        "omitLastInOneLineBlock": false
+        omitLastInOneLineBlock: false
       }
     ],
 
     // Enforce consistent spacing before and after semicolons
     'semi-spacing': [
-      "error",
+      'error',
       {
-        "after": true,
-        "before": false
+        after: true,
+        before: false
       }
     ],
 
@@ -385,45 +385,45 @@ module.exports = {
 
     // Enforce consistent spacing before blocks
     'space-before-blocks': [
-      "error",
+      'error',
       {
-        "functions": "always",
-        "keywords": "always",
-        "classes": "always"
+        functions: 'always',
+        keywords: 'always',
+        classes: 'always'
       }
     ],
 
     // Enforce consistent spacing before `function` definition opening parenthesis
     'space-before-function-paren': [
-      "error",
+      'error',
       {
-        "anonymous": "never",
-        "named": "never",
-        "asyncArrow": "ignore"
+        anonymous: 'never',
+        named: 'never',
+        asyncArrow: 'ignore'
       }
     ],
 
     // Enforce consistent spacing inside parentheses
     'space-in-parens': [
-      "error",
-      "never"
+      'error',
+      'never'
     ],
 
     // Require spacing around infix operators
     'space-infix-ops': [
-      "error",
+      'error',
       {
-        "int32Hint": false
+        int32Hint: false
       }
     ],
 
     // Enforce consistent spacing before or after unary operators
     'space-unary-ops': [
-      "error",
+      'error',
       {
-        "words": true,
-        "nonwords": false,
-        "overrides": {}
+        words: true,
+        nonwords: false,
+        overrides: {}
       }
     ],
 
@@ -432,42 +432,40 @@ module.exports = {
 
     // Require or disallow spacing around embedded expressions of template strings
     'template-curly-spacing': [
-      "error",
-      "never"
+      'error',
+      'never'
     ],
 
     // Require or disallow spacing between template tags and their literals
     'template-tag-spacing': [
-      "error",
-      "never"
+      'error',
+      'never'
     ],
 
     // Require or disallow Unicode byte order mark (BOM)
     'unicode-bom': [
-      "error",
-      "never"
+      'error',
+      'never'
     ],
 
     // Require parentheses around immediate `function` invocations
     'wrap-iife': [
-      "error",
-      "inside",
+      'error',
+      'inside',
       {
-        "functionPrototypeMethods": false
+        functionPrototypeMethods: false
       }
     ],
 
     // Require parenthesis around regex literals
-    'wrap-regex': [
-      "off"
-    ],
+    'wrap-regex': ['off'],
 
     // Require or disallow spacing around the `*` in `yield*` expressions
     'yield-star-spacing': [
-      "error",
+      'error',
       {
-        "after": true,
-        "before": true
+        after: true,
+        before: true
       }
     ]
   }

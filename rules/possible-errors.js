@@ -11,14 +11,18 @@ module.exports = {
     'no-cond-assign': ['error', 'except-parens'],
 
     // Disallow the use of console
-    'no-console': ['error', {
-      allow: ['warn']
-    }],
+    'no-console': [
+      'error', {
+        allow: ['warn']
+      }
+    ],
 
     // Disallow constant expressions in conditions
-    'no-constant-condition': ['error', {
-      checkLoops: true
-    }],
+    'no-constant-condition': [
+      'error', {
+        checkLoops: true
+      }
+    ],
 
     // Disallow control characters in regular expressions
     'no-control-regex': ['error'],
@@ -36,9 +40,11 @@ module.exports = {
     'no-duplicate-case': ['error'],
 
     // Disallow empty block statements
-    'no-empty': ['error', {
-      allowEmptyCatch: true
-    }],
+    'no-empty': [
+      'error', {
+        allowEmptyCatch: true
+      }
+    ],
 
     // Disallow empty character classes in regular expressions
     'no-empty-character-class': ['error'],
@@ -50,12 +56,14 @@ module.exports = {
     'no-extra-boolean-cast': ['error'],
 
     // Disallow unnecessary parentheses
-    'no-extra-parens': ['error', 'all', {
-      conditionalAssign: true,
-      ignoreJSX: 'all',
-      nestedBinaryExpressions: false,
-      returnAssign: true
-    }],
+    'no-extra-parens': [
+      'error', 'all', {
+        conditionalAssign: true,
+        ignoreJSX: 'all',
+        nestedBinaryExpressions: false,
+        returnAssign: true
+      }
+    ],
 
     // Disallow unnecessary semicolons
     'no-extra-semi': ['error'],
@@ -67,17 +75,21 @@ module.exports = {
     'no-inner-declarations': ['error', 'both'],
 
     // Disallow invalid regular expression strings in RegExp constructors
-    'no-invalid-regexp': ['error', {
-      allowConstructorFlags: []
-    }],
+    'no-invalid-regexp': [
+      'error', {
+        allowConstructorFlags: []
+      }
+    ],
 
     // Disallow irregular whitespace outside of strings and comments
-    'no-irregular-whitespace': ['error', {
-      skipComments: false,
-      skipRegExps: false,
-      skipStrings: false,
-      skipTemplates: false
-    }],
+    'no-irregular-whitespace': [
+      'error', {
+        skipComments: false,
+        skipRegExps: false,
+        skipStrings: false,
+        skipTemplates: false
+      }
+    ],
 
     // Disallow calling global object properties as functions
     'no-obj-calls': ['error'],
@@ -110,25 +122,29 @@ module.exports = {
     'use-isnan': ['error'],
 
     // Enforce valid JSDoc comments
-    'valid-jsdoc': ['error', {
-      matchDescription: '.+',
-      prefer: {
-        arg: 'param',
-        argument: 'param',
-        'class': 'constructor',
-        virtual: 'abstract'
-      },
-      preferType: {},
-      requireParamDescription: true,
-      requireReturn: true,
-      requireReturnDescription: true,
-      requireReturnType: true
-    }],
+    'valid-jsdoc': [
+      'error', {
+        matchDescription: '.+',
+        prefer: {
+          arg: 'param',
+          argument: 'param',
+          'class': 'constructor',
+          virtual: 'abstract'
+        },
+        preferType: {},
+        requireParamDescription: true,
+        requireReturn: true,
+        requireReturnDescription: true,
+        requireReturnType: true
+      }
+    ],
 
     // Enforce comparing typeof expressions against valid strings
-    'valid-typeof': ['error', {
-      requireStringLiterals: false
-    }]
+    'valid-typeof': [
+      'error', {
+        requireStringLiterals: false
+      }
+    ]
 
   }
 };

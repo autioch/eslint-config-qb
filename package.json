@@ -1,13 +1,11 @@
 {
   "name": "eslint-config-qb",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Custom configuration for eslint",
   "keywords": [
     "eslint",
     "eslint-config",
-    "eslintconfig",
-    "eslint-plugin",
-    "eslintplugin"
+    "eslintconfig"
   ],
   "bugs": {
     "url": "https://github.com/autioch/eslint-config-qb/issues"
@@ -15,14 +13,18 @@
   "author": "autioch",
   "license": "ISC",
   "main": "index.js",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/autioch/eslint-config-qb.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/autioch/eslint-config-qb.git"
   },
   "scripts": {
-    "lint": "eslint ./src --fix --ext .js & exit 0"
+    "lint": "eslint . --fix --ext .js",
+    "build": "node ./src/build"
   },
   "peerDependencies": {
-    "eslint": ">= 3.17.1"
+    "eslint": ">= 8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0"
   }
 }

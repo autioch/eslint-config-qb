@@ -1,0 +1,62 @@
+{
+  "callback-return": [
+    "warn",
+    [
+      "callback"
+    ]
+  ],
+  "global-require": [
+    "off"
+  ],
+  "handle-callback-err": [
+    "error",
+    "err"
+  ],
+  "no-mixed-requires": [
+    "error",
+    {
+      "allowCall": false,
+      "grouping": true
+    }
+  ],
+  "no-restricted-modules": [
+    "error",
+    "repl"
+  ],
+  "valid-jsdoc": [
+    "error",
+    {
+      "matchDescription": ".+",
+      "prefer": {
+        "arg": "param",
+        "argument": "param",
+        "class": "constructor",
+        "virtual": "abstract"
+      },
+      "preferType": {},
+      "requireParamDescription": true,
+      "requireReturn": true,
+      "requireReturnDescription": true,
+      "requireReturnType": true
+    }
+  ],
+  "id-blacklist": [
+    "error",
+    "item",
+    "data"
+  ],
+  "lines-around-directive": [
+    "error",
+    {
+      "after": "always",
+      "before": "always"
+    }
+  ],
+  "newline-after-var": [
+    "error",
+    "always"
+  ],
+  "require-jsdoc": [
+    "off"
+  ]
+}

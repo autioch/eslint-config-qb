@@ -2,10 +2,12 @@ module.exports = {
   rules: {
 
     // Enforce getter and setter pairs in objects
-    'accessor-pairs': ['error', {
-      getWithoutSet: false,
-      setWithoutGet: true
-    }],
+    'accessor-pairs': [
+      'error', {
+        getWithoutSet: false,
+        setWithoutGet: true
+      }
+    ],
 
     // Enforce return statements in callbacks of array methods
     'array-callback-return': ['error'],
@@ -14,19 +16,25 @@ module.exports = {
     'block-scoped-var': ['error'],
 
     // Enforce that class methods utilize this
-    'class-methods-use-this': ['error', {
-      exceptMethods: []
-    }],
+    'class-methods-use-this': [
+      'error', {
+        exceptMethods: []
+      }
+    ],
 
     // Enforce a maximum cyclomatic complexity allowed in a program
-    complexity: ['error', {
-      max: 20
-    }],
+    complexity: [
+      'error', {
+        max: 20
+      }
+    ],
 
     // Require return statements to either always or never specify values
-    'consistent-return': ['error', {
-      treatUndefinedAsUnspecified: true
-    }],
+    'consistent-return': [
+      'error', {
+        treatUndefinedAsUnspecified: true
+      }
+    ],
 
     // Enforce consistent brace style for all control statements
     curly: ['error', 'all'],
@@ -38,9 +46,11 @@ module.exports = {
     'dot-location': ['error', 'property'],
 
     // Enforce dot notation whenever possible
-    'dot-notation': ['error', {
-      allowKeywords: true
-    }],
+    'dot-notation': [
+      'error', {
+        allowKeywords: true
+      }
+    ],
 
     // Require the use of === and !==
     eqeqeq: ['warn'],
@@ -76,9 +86,11 @@ module.exports = {
     'no-eval': ['error'],
 
     // Disallow extending native types
-    'no-extend-native': ['error', {
-      exceptions: []
-    }],
+    'no-extend-native': [
+      'error', {
+        exceptions: []
+      }
+    ],
 
     // Disallow unnecessary calls to .bind()
     'no-extra-bind': ['error'],
@@ -93,17 +105,21 @@ module.exports = {
     'no-floating-decimal': ['error'],
 
     // Disallow assignments to native objects or read-only global variables
-    'no-global-assign': ['error', {
-      exceptions: []
-    }],
+    'no-global-assign': [
+      'error', {
+        exceptions: []
+      }
+    ],
 
     // Disallow shorthand type conversions
-    'no-implicit-coercion': ['error', {
-      allow: ['!!'],
-      'boolean': true,
-      number: true,
-      string: true
-    }],
+    'no-implicit-coercion': [
+      'error', {
+        allow: ['!!'],
+        'boolean': true,
+        number: true,
+        string: true
+      }
+    ],
 
     // Disallow variable and function declarations in the global scope
     'no-implicit-globals': ['error'],
@@ -118,10 +134,12 @@ module.exports = {
     'no-iterator': ['error'],
 
     // Disallow labeled statements
-    'no-labels': ['error', {
-      allowLoop: false,
-      allowSwitch: false
-    }],
+    'no-labels': [
+      'error', {
+        allowLoop: false,
+        allowSwitch: false
+      }
+    ],
 
     // Disallow unnecessary nested blocks
     'no-lone-blocks': ['error'],
@@ -130,17 +148,21 @@ module.exports = {
     'no-loop-func': ['error'],
 
     // Disallow magic numbers
-    'no-magic-numbers': ['error', {
-      detectObjects: true,
-      enforceConst: true,
-      ignore: [-1, 0, 1, 10],
-      ignoreArrayIndexes: false
-    }],
+    'no-magic-numbers': [
+      'error', {
+        detectObjects: true,
+        enforceConst: true,
+        ignore: [-1, 0, 1, 10],
+        ignoreArrayIndexes: false
+      }
+    ],
 
     // Disallow multiple spaces
-    'no-multi-spaces': ['error', {
-      exceptions: {}
-    }],
+    'no-multi-spaces': [
+      'error', {
+        exceptions: {}
+      }
+    ],
 
     // Disallow multiline strings
     'no-multi-str': ['error'],
@@ -161,17 +183,21 @@ module.exports = {
     'no-octal-escape': ['error'],
 
     // Disallow reassigning function parameters
-    'no-param-reassign': ['error', {
-      props: false
-    }],
+    'no-param-reassign': [
+      'error', {
+        props: false
+      }
+    ],
 
     // Disallow the use of the __proto__ property
     'no-proto': ['error'],
 
     // Disallow variable redeclaration
-    'no-redeclare': ['error', {
-      builtinGlobals: true
-    }],
+    'no-redeclare': [
+      'error', {
+        builtinGlobals: true
+      }
+    ],
 
     // Disallow certain properties on certain objects
     'no-restricted-properties': ['off'],
@@ -186,9 +212,11 @@ module.exports = {
     'no-script-url': ['error'],
 
     // Disallow assignments where both sides are exactly the same
-    'no-self-assign': ['error', {
-      props: true
-    }],
+    'no-self-assign': [
+      'error', {
+        props: true
+      }
+    ],
 
     // Disallow comparisons where both sides are exactly the same
     'no-self-compare': ['error'],
@@ -203,10 +231,12 @@ module.exports = {
     'no-unmodified-loop-condition': ['error'],
 
     // Disallow unused expressions
-    'no-unused-expressions': ['error', {
-      allowShortCircuit: false,
-      allowTernary: false
-    }],
+    'no-unused-expressions': [
+      'error', {
+        allowShortCircuit: false,
+        allowTernary: false
+      }
+    ],
 
     // Disallow unused labels
     'no-unused-labels': ['error'],
@@ -227,18 +257,22 @@ module.exports = {
     'no-void': ['error'],
 
     // Disallow specified warning terms in comments
-    'no-warning-comments': ['error', {
-      location: 'start',
-      terms: ['fixme', 'xxx']
-    }],
+    'no-warning-comments': [
+      'error', {
+        location: 'start',
+        terms: ['fixme', 'xxx']
+      }
+    ],
 
     // Disallow with statements
     'no-with': ['error'],
 
     // Require using Error objects as Promise rejection reasons
-    'prefer-promise-reject-errors': ['error', {
-      allowEmptyReject: false
-    }],
+    'prefer-promise-reject-errors': [
+      'error', {
+        allowEmptyReject: false
+      }
+    ],
 
     // Enforce the consistent use of the radix argument when using parseInt()
     radix: ['error', 'always'],
@@ -250,9 +284,11 @@ module.exports = {
     'vars-on-top': ['error'],
 
     // Require parentheses around immediate function invocations
-    'wrap-iife': ['error', 'inside', {
-      functionPrototypeMethods: false
-    }],
+    'wrap-iife': [
+      'error', 'inside', {
+        functionPrototypeMethods: false
+      }
+    ],
 
     // Require or disallow “Yoda” conditions
     yoda: ['error']
