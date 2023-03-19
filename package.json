@@ -22,9 +22,11 @@
     "update": "node ./src/update"
   },
   "peerDependencies": {
-    "eslint": ">= 8.0.0"
+    "eslint": ">= 8.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.36.0"
+    "eslint": "^8.36.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0"
   }
 }

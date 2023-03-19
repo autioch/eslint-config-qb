@@ -9,6 +9,9 @@
     "browser": true,
     "node": true
   },
+  "plugins": [
+    "simple-import-sort"
+  ],
   "rules": {
     "array-callback-return": [
       "error"
@@ -192,10 +195,11 @@
     "no-unused-vars": [
       "error",
       {
-        "args": "all",
+        "args": "after-used",
         "caughtErrors": "all",
         "ignoreRestSiblings": false,
-        "vars": "all"
+        "vars": "all",
+        "destructuredArrayIgnorePattern": "^__$"
       }
     ],
     "no-use-before-define": [
@@ -319,12 +323,20 @@
     "id-denylist": [
       "error",
       "item",
-      "data"
+      "data",
+      "el"
     ],
     "id-length": [
       "error",
       {
-        "exceptions": [],
+        "exceptions": [
+          "i",
+          "j",
+          "a",
+          "b",
+          "x",
+          "y"
+        ],
         "max": 30,
         "min": 2,
         "properties": "always"
@@ -505,7 +517,7 @@
       "error"
     ],
     "no-inline-comments": [
-      "error"
+      "off"
     ],
     "no-invalid-this": [
       "error"
@@ -535,15 +547,17 @@
     "no-magic-numbers": [
       "error",
       {
-        "detectObjects": true,
+        "detectObjects": false,
         "enforceConst": true,
+        "ignoreDefaultValues": true,
+        "ignoreClassFieldInitialValues": true,
+        "ignoreArrayIndexes": false,
         "ignore": [
           -1,
           0,
           1,
           10
-        ],
-        "ignoreArrayIndexes": false
+        ]
       }
     ],
     "no-mixed-operators": [
@@ -670,9 +684,10 @@
     "no-underscore-dangle": [
       "error",
       {
-        "allow": [],
-        "allowAfterSuper": false,
-        "allowAfterThis": false
+        "allow": ["__"],
+        "allowInArrayDestructuring": false,
+        "allowInObjectDestructuring": false,
+        "allowFunctionParams": false
       }
     ],
     "no-unneeded-ternary": [
@@ -682,11 +697,7 @@
       }
     ],
     "no-unused-expressions": [
-      "error",
-      {
-        "allowShortCircuit": false,
-        "allowTernary": false
-      }
+      "error"
     ],
     "no-unused-labels": [
       "error"
@@ -1022,10 +1033,7 @@
       }
     ],
     "line-comment-position": [
-      "error",
-      {
-        "position": "above"
-      }
+      "off"
     ],
     "linebreak-style": [
       "error",
@@ -1271,6 +1279,25 @@
         "after": true,
         "before": true
       }
+    ],
+    "simple-import-sort/imports": [
+      "warn",
+      {
+        "groups": [
+          [
+            "^[^.]"
+          ],
+          [
+            "^\\."
+          ],
+          [
+            "^"
+          ]
+        ]
+      }
+    ],
+    "simple-import-sort/exports": [
+      "off"
     ]
   }
 }

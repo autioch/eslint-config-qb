@@ -3,14 +3,26 @@ const { join } = require('node:path');
 const newRuleNameList = require('./extracted.json');
 const oldConfig = require('../index.json');
 
-// const originalRules = require('../originalRules');
-
 const saveFile = (fileName, fileData) => fs.writeFile(join(__dirname, '..', fileName), fileData, 'utf-8');
 
+const plugins = {
+  'simple-import-sort/imports': [
+    'warn',
+    {
+      groups: [
+        ['^[^.]'],
+        ['^\\.'],
+        ['^']
+      ]
+    }
+  ],
+  'simple-import-sort/exports': ['off']
+};
+
 (async () => {
-  // const oldRuleDict = originalRules;
   const { rules: oldRuleDict } = oldConfig;
-  const newRuleList = newRuleNameList.map((ruleName) => [ruleName, oldRuleDict[ruleName] || ['error']]);
+  const newRuleList = [...newRuleNameList, ...Object.keys(plugins)]
+    .map((ruleName) => [ruleName, oldRuleDict[ruleName] || plugins[ruleName] || ['error']]);
 
   // Provide some info on what changed
   const currentSet = new Set(newRuleNameList);
