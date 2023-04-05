@@ -1170,7 +1170,11 @@
       "error",
       {
         "blankLine": "always",
-        "prev": "*",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
         "next": "*"
       },
       {
@@ -1185,6 +1189,25 @@
           "let",
           "var"
         ]
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": [
+          "export",
+          "function",
+          "return"
+        ]
+      },
+      {
+        "blankLine": "always",
+        "prev": [
+          "function",
+          "export",
+          "block",
+          "block-like"
+        ],
+        "next": "*"
       }
     ],
     "quotes": [
