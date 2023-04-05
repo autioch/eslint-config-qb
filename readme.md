@@ -4,7 +4,10 @@ Custom configuration for eslint.
 
 ## Usage
 1. Install `npm i -D eslint-config-qb`
-2. Add in eslint config `extends: ['qb']`.
+2. Use in eslint config:
+- create `.eslintrc.js` with contents `module.exports = { 'extends': ['qb'] };`
+- add in eslint config `extends: ['qb']`.
+3. Add script `"lint": "eslint . --fix --ext .js"`.
 
 ## Target
 - ES6,
